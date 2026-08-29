@@ -33,3 +33,22 @@ export interface Verse {
   sourceUrl: string;
   note?: string;
 }
+
+/** Religions with a dedicated "internal tensions" section — Islam is deliberately excluded. */
+export type ContradictionReligionId = "christianity" | "judaism" | "hinduism";
+
+export interface Passage {
+  reference: string;
+  text: string;
+  translation: string;
+  sourceUrl: string;
+}
+
+export interface Contradiction {
+  id: string;
+  religionId: ContradictionReligionId;
+  title: string;
+  description: string;
+  passages: Passage[];
+  note?: string;
+}
