@@ -127,6 +127,44 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-14 sm:px-6">
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8">
+            <h2 className="font-serif text-2xl font-semibold">
+              Science in the Qur'an
+            </h2>
+            <p className="mt-2 text-slate-600 dark:text-slate-300">
+              Verses popularly linked to modern scientific findings —
+              presented as claims to weigh, with the classical commentary
+              and scientific context alongside each one.
+            </p>
+            <Link
+              to="/science"
+              className="mt-4 inline-block rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              Explore the claims →
+            </Link>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8">
+            <h2 className="font-serif text-2xl font-semibold">
+              Prophecies of Muhammad ﷺ
+            </h2>
+            <p className="mt-2 text-slate-600 dark:text-slate-300">
+              Passages from the Tanakh, the New Testament, and Hindu
+              scripture said to foretell his coming — each with the
+              tradition's own mainstream reading alongside the claim.
+            </p>
+            <Link
+              to="/prophecies"
+              className="mt-4 inline-block rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              Explore the claims →
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -5,6 +5,8 @@ const navItems = [
   { to: "/concepts", label: "Concepts" },
   { to: "/religions", label: "Traditions" },
   { to: "/contradictions", label: "Contradictions" },
+  { to: "/science", label: "Science" },
+  { to: "/prophecies", label: "Prophecies" },
   { to: "/sources", label: "Sources" },
 ];
 
