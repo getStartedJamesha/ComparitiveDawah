@@ -1,0 +1,16 @@
+[Unit]
+Description=Comparative Dawah web app
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/ComparitiveDawah
+Environment=PORT=4173
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /home/pi/ComparitiveDawah/deploy/serve.mjs
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
