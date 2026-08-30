@@ -11,7 +11,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "serve:pi": "node deploy/serve.mjs"
+    "start": "node deploy/serve.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

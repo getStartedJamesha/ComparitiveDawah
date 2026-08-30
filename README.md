@@ -26,10 +26,14 @@ npm run build    # typecheck + production build
 npm run lint      # oxlint
 ```
 
+Want to run this permanently on your own hardware (e.g. a Raspberry Pi)
+instead of just locally? See [`deploy/README.md`](deploy/README.md) for a
+step-by-step guide, including a systemd service so it survives reboots.
+
 ## Structure
 
 - `src/data/` — the religions, concepts, and verses (with citations) that
   drive the entire site. This is the part to edit/extend carefully.
-- `src/components/` — shared UI (layout, verse card).
+- `src/components/` — shared UI (layout, verse card, contradiction card).
 - `src/pages/` — routed pages: Home, Concepts, Concept detail, Religions,
-  Religion detail, Sources.
+  Religion detail, Contradictions, Sources.

@@ -1,0 +1,22 @@
+[Unit]
+Description=One God, Many Scriptures - Comparative Dawah
+After=network.target
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=__APP_DIR__
+Environment=NODE_ENV=production
+Environment=PORT=4173
+ExecStart=__NPM_BIN__ start
+Restart=on-failure
+RestartSec=5
+
+# Basic hardening - this is a static file server with no writes at runtime.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=__APP_DIR__
+
+[Install]
+WantedBy=multi-user.target
