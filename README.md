@@ -32,8 +32,24 @@ step-by-step guide, including a systemd service so it survives reboots.
 
 ## Structure
 
-- `src/data/` — the religions, concepts, and verses (with citations) that
-  drive the entire site. This is the part to edit/extend carefully.
-- `src/components/` — shared UI (layout, verse card, contradiction card).
+- `src/data/` — the religions, concepts, verses, contradictions, science
+  topics, and prophecies (with citations) that drive the entire site. This
+  is the part to edit/extend carefully.
+- `src/components/` — shared UI (layout, verse/contradiction/science/
+  prophecy cards).
 - `src/pages/` — routed pages: Home, Concepts, Concept detail, Religions,
-  Religion detail, Contradictions, Sources.
+  Religion detail, Contradictions, Science, Prophecies, Sources.
+
+## A note on the Science and Prophecies sections
+
+Both present popular Dawah claims honestly — but neither presents a claim
+as settled fact just because it's popular. Every entry states the claim,
+gives an authentic citation where one exists, and also gives the honest
+counter-context: how classical commentators or the other tradition's own
+mainstream reading actually understands the same passage, including plain
+facts about manuscript evidence where relevant (see the Paraclete entry in
+Prophecies). One entry (the Bhavishya Purana) deliberately has no citation
+at all, because that passage's authenticity and dating is itself the
+disputed point — see `src/data/prophecies.ts` for why. This follows the
+same sourcing policy as the rest of the site, documented in full on the
+in-app **Sources** page.

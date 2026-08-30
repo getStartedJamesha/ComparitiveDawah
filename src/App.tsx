@@ -6,6 +6,8 @@ import ConceptDetail from "./pages/ConceptDetail";
 import Religions from "./pages/Religions";
 import ReligionDetail from "./pages/ReligionDetail";
 import Contradictions from "./pages/Contradictions";
+import Science from "./pages/Science";
+import Prophecies from "./pages/Prophecies";
 import Sources from "./pages/Sources";
 
 export default function App() {
@@ -19,6 +21,8 @@ export default function App() {
           <Route path="religions" element={<Religions />} />
           <Route path="religions/:religionId" element={<ReligionDetail />} />
           <Route path="contradictions" element={<Contradictions />} />
+          <Route path="science" element={<Science />} />
+          <Route path="prophecies" element={<Prophecies />} />
           <Route path="sources" element={<Sources />} />
         </Route>
       </Routes>

@@ -74,6 +74,23 @@ want to, but you'll need to actually secure the path there yourself:
 - **Simplest, safest by default:** install [Tailscale](https://tailscale.com/)
   on the Pi and your other devices, same as for the bill tracker. Free for
   personal use, encrypts everything, no ports opened on your router.
+- **To send someone a link without them installing anything:** use
+  [Tailscale Funnel](https://tailscale.com/kb/1223/funnel) to publish just
+  this app over HTTPS, without opening any port on your router:
+
+  ```bash
+  sudo tailscale up                     # one-time: join a tailnet
+  # then in the Tailscale admin console -> DNS -> enable HTTPS Certificates
+  sudo tailscale funnel --bg 4173
+  tailscale funnel status               # prints the https:// link to share
+  ```
+
+  This gives a stable link like `https://<device>.<your-tailnet>.ts.net`
+  that proxies to `127.0.0.1:4173` — anyone with the link can open it in a
+  normal browser, no Tailscale install needed on their end. Turn it off
+  any time with `sudo tailscale funnel 4173 off`. Reasonable here since
+  there's no login and no personal data behind it; think twice before
+  doing this for something like the bill tracker.
 - **If you want it reachable by anyone, with a domain:** put a reverse
   proxy (nginx, Caddy, or similar) in front of `127.0.0.1:4173` with a TLS
   certificate, then port-forward 443 to that proxy — not directly to 4173.

@@ -52,3 +52,25 @@ export interface Contradiction {
   passages: Passage[];
   note?: string;
 }
+
+export interface ScienceTopic {
+  id: string;
+  title: string;
+  field: string;
+  passage: Passage;
+  claim: string;
+  context: string;
+}
+
+/** Scriptures with a claimed prophecy of Muhammad — presented alongside each tradition's own mainstream reading. */
+export type ProphecyReligionId = "judaism" | "christianity" | "hinduism";
+
+export interface Prophecy {
+  id: string;
+  religionId: ProphecyReligionId;
+  title: string;
+  /** Omitted when the underlying text's authenticity/dating is itself the disputed point — see hinduism-bhavishya-purana. */
+  passage?: Passage;
+  claim: string;
+  context: string;
+}
