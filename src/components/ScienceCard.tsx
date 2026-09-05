@@ -1,4 +1,5 @@
 import type { ScienceTopic } from "../data/types";
+import { ScienceDiagram } from "./ScienceDiagrams";
 
 export default function ScienceCard({ topic }: { topic: ScienceTopic }) {
   return (
@@ -29,6 +30,8 @@ export default function ScienceCard({ topic }: { topic: ScienceTopic }) {
           Verify at the primary source ↗
         </a>
       </div>
+
+      <ScienceDiagram id={topic.id} />
 
       <div className="mt-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
