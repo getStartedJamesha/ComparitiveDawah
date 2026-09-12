@@ -11,24 +11,28 @@ export default function ScienceCard({ topic }: { topic: ScienceTopic }) {
         </span>
       </div>
 
-      <div className="mt-4 rounded-xl bg-slate-50 p-4 dark:bg-slate-800/60">
-        <blockquote className="font-serif text-base leading-relaxed text-slate-800 dark:text-slate-100">
-          &ldquo;{topic.passage.text}&rdquo;
-        </blockquote>
-        <p className="mt-3 text-sm font-medium text-slate-700 dark:text-slate-200">
-          {topic.passage.reference}
-        </p>
-        <p className="text-xs text-slate-400">
-          Translation: {topic.passage.translation}
-        </p>
-        <a
-          href={topic.passage.sourceUrl}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="mt-2 inline-block text-xs font-medium underline decoration-slate-300 underline-offset-4 hover:decoration-slate-600 dark:decoration-slate-600 dark:hover:decoration-slate-300"
-        >
-          Verify at the primary source ↗
-        </a>
+      <div className="mt-4 space-y-3">
+        {topic.passages.map((passage, i) => (
+          <div key={i} className="rounded-xl bg-slate-50 p-4 dark:bg-slate-800/60">
+            <blockquote className="font-serif text-base leading-relaxed text-slate-800 dark:text-slate-100">
+              &ldquo;{passage.text}&rdquo;
+            </blockquote>
+            <p className="mt-3 text-sm font-medium text-slate-700 dark:text-slate-200">
+              {passage.reference}
+            </p>
+            <p className="text-xs text-slate-400">
+              Translation: {passage.translation}
+            </p>
+            <a
+              href={passage.sourceUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-2 inline-block text-xs font-medium underline decoration-slate-300 underline-offset-4 hover:decoration-slate-600 dark:decoration-slate-600 dark:hover:decoration-slate-300"
+            >
+              Verify at the primary source ↗
+            </a>
+          </div>
+        ))}
       </div>
 
       <ScienceDiagram id={topic.id} />

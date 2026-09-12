@@ -53,11 +53,22 @@ export interface Contradiction {
   note?: string;
 }
 
+export type ScienceCategoryId =
+  | "embryology"
+  | "astronomy"
+  | "earth-sciences"
+  | "oceans-water"
+  | "biology"
+  | "metallurgy"
+  | "other";
+
 export interface ScienceTopic {
   id: string;
   title: string;
   field: string;
-  passage: Passage;
+  category: ScienceCategoryId;
+  /** One or more verses cited for this claim — several of these are cited across multiple, sometimes non-adjacent, passages. */
+  passages: Passage[];
   claim: string;
   context: string;
 }
