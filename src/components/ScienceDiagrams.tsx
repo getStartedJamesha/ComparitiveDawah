@@ -197,6 +197,102 @@ function CelestialOrbits() {
   );
 }
 
+function HeavensEarthJoined() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(55, 50)">
+        <circle cx="-10" cy="0" r="26" className={accent} fill="currentColor" opacity={0.6} />
+        <circle cx="14" cy="0" r="22" className={dim} fill="currentColor" opacity={0.6} />
+      </g>
+      <Arrow x1={110} y1={50} x2={160} y2={50} />
+      <circle cx="205" cy="50" r="22" className={accent} fill="currentColor" />
+      <circle cx="270" cy="50" r="18" className={dim} fill="currentColor" />
+    </svg>
+  );
+}
+
+function SkyWithoutPillars() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <rect x="20" y="10" width="260" height="14" rx="4" className={accent} fill="currentColor" />
+      <line x1="10" y1="85" x2="290" y2="85" className={dim} stroke="currentColor" strokeWidth={2} />
+      <g className="text-slate-400 dark:text-slate-500" stroke="currentColor" strokeWidth={1.5} strokeDasharray="3 4">
+        <line x1="80" y1="24" x2="80" y2="85" />
+        <line x1="150" y1="24" x2="150" y2="85" />
+        <line x1="220" y1="24" x2="220" y2="85" />
+      </g>
+    </svg>
+  );
+}
+
+function AtmosphereShield() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <circle cx="150" cy="50" r="40" className={dim} stroke="currentColor" strokeWidth={2} strokeDasharray="4 4" fill="none" />
+      <circle cx="150" cy="50" r="22" className={accent} fill="currentColor" />
+      <g className="text-amber-500" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
+        <line x1="40" y1="20" x2="98" y2="42" />
+        <line x1="255" y1="25" x2="205" y2="45" />
+        <line x1="250" y1="80" x2="200" y2="60" />
+      </g>
+    </svg>
+  );
+}
+
+function SeaDarknessLayers() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <circle cx="270" cy="15" r="8" className="text-amber-500" fill="currentColor" />
+      <rect x="20" y="15" width="260" height="70" rx="4" className={accent} fill="currentColor" opacity={0.15} />
+      <rect x="20" y="40" width="260" height="45" rx="0" className={accent} fill="currentColor" opacity={0.35} />
+      <rect x="20" y="60" width="260" height="25" rx="0" className={accent} fill="currentColor" opacity={0.6} />
+      <g className="text-slate-500 dark:text-slate-300" stroke="currentColor" strokeWidth={1.5} fill="none">
+        <path d="M 20 40 Q 60 34 100 40 T 180 40 T 260 40" />
+        <path d="M 20 60 Q 60 54 100 60 T 180 60 T 260 60" />
+      </g>
+    </svg>
+  );
+}
+
+function Fingerprint() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(150, 50)" className={accent} stroke="currentColor" strokeWidth={2.5} fill="none" strokeLinecap="round">
+        <path d="M -35 10 Q -35 -25 0 -25 Q 35 -25 35 10 Q 35 30 15 30" />
+        <path d="M -25 12 Q -25 -14 0 -14 Q 25 -14 25 10 Q 25 24 10 24" />
+        <path d="M -14 12 Q -14 -4 0 -4 Q 14 -4 14 10" />
+      </g>
+    </svg>
+  );
+}
+
+function DayNightWrapping() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(150, 50)">
+        <circle r="38" className="text-slate-700 dark:text-slate-300" fill="currentColor" />
+        <path d="M 0 -38 Q 30 -20 0 0 Q -30 20 0 38 A 38 38 0 0 0 0 -38 Z" className={accent} fill="currentColor" />
+      </g>
+    </svg>
+  );
+}
+
+function LowestPoint() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <line x1="10" y1="40" x2="290" y2="40" className={dim} stroke="currentColor" strokeWidth={1.5} strokeDasharray="3 3" />
+      <path
+        d="M 10 40 L 100 40 Q 150 40 170 75 Q 190 40 240 40 L 290 40"
+        className={accent}
+        stroke="currentColor"
+        strokeWidth={2.5}
+        fill="none"
+      />
+      <circle cx="170" cy="75" r="4" className="text-amber-500" fill="currentColor" />
+    </svg>
+  );
+}
+
 const diagrams: Record<string, () => ReactElement> = {
   embryology: Embryology,
   "cosmic-expansion": CosmicExpansion,
@@ -205,6 +301,13 @@ const diagrams: Record<string, () => ReactElement> = {
   "sea-barrier": SeaBarrier,
   "iron-origin": IronOrigin,
   "celestial-orbits": CelestialOrbits,
+  "heavens-earth-joined": HeavensEarthJoined,
+  "sky-without-pillars": SkyWithoutPillars,
+  "atmosphere-shield": AtmosphereShield,
+  "sea-darkness-layers": SeaDarknessLayers,
+  fingerprints: Fingerprint,
+  "day-night-wrapping": DayNightWrapping,
+  "lowest-point-earth": LowestPoint,
 };
 
 const diagramCaptions: Record<string, string> = {
@@ -215,6 +318,13 @@ const diagramCaptions: Record<string, string> = {
   "sea-barrier": "two bodies of water meeting without fully mixing",
   "iron-origin": "iron formed in a supernova, later arriving on Earth",
   "celestial-orbits": "bodies following distinct paths around a center",
+  "heavens-earth-joined": "one joined mass, then separated",
+  "sky-without-pillars": "the sky held up with no visible supporting structure",
+  "atmosphere-shield": "a surrounding layer deflecting incoming debris",
+  "sea-darkness-layers": "light fading through successive layers of depth",
+  fingerprints: "a distinct, individual pattern",
+  "day-night-wrapping": "day and night curving continuously around a globe",
+  "lowest-point-earth": "a dip below the surrounding elevation",
 };
 
 export function ScienceDiagram({ id }: { id: string }) {

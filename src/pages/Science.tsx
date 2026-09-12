@@ -1,4 +1,4 @@
-import { scienceTopics } from "../data/science";
+import { scienceCategories, scienceTopicsByCategory } from "../data/science";
 import ScienceCard from "../components/ScienceCard";
 
 export default function Science() {
@@ -19,14 +19,40 @@ export default function Science() {
       </p>
       <p className="mt-3 max-w-3xl text-sm text-slate-500 dark:text-slate-400">
         Weigh both sides. A verse being compatible with a modern finding is
-        a different claim from a verse having predicted it.
+        a different claim from a verse having predicted it. A couple of
+        entries below also note a genuine objection critics raise (an
+        anatomical detail, a translation choice) rather than only the
+        favorable reading.
       </p>
 
-      <div className="mt-8 grid gap-6 sm:grid-cols-2">
-        {scienceTopics.map((topic) => (
-          <ScienceCard key={topic.id} topic={topic} />
+      <nav className="mt-8 flex flex-wrap gap-2">
+        {scienceCategories.map((category) => (
+          <a
+            key={category.id}
+            href={`#${category.id}`}
+            className="rounded-full border border-slate-300 px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+          >
+            {category.title}
+          </a>
         ))}
-      </div>
+      </nav>
+
+      {scienceCategories.map((category) => {
+        const topics = scienceTopicsByCategory(category.id);
+        if (topics.length === 0) return null;
+        return (
+          <section key={category.id} id={category.id} className="mt-14 scroll-mt-20">
+            <h2 className="border-b border-teal-600 pb-3 font-serif text-2xl font-semibold dark:border-teal-400">
+              {category.title}
+            </h2>
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              {topics.map((topic) => (
+                <ScienceCard key={topic.id} topic={topic} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }
