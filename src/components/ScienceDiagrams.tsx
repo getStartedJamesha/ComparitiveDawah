@@ -293,6 +293,135 @@ function LowestPoint() {
   );
 }
 
+function FluidOrigin() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <path
+        d="M 60 20 C 60 20 30 55 30 72 C 30 87 45 95 60 95 C 75 95 90 87 90 72 C 90 55 60 20 60 20 Z"
+        className={accent}
+        fill="currentColor"
+      />
+      <Arrow x1={115} y1={55} x2={175} y2={55} />
+      <circle cx="220" cy="55" r="20" className={dim} stroke="currentColor" strokeWidth={2.5} fill="none" />
+      <circle cx="220" cy="55" r="7" className={accent} fill="currentColor" />
+    </svg>
+  );
+}
+
+function ThreeDarknesses() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(150, 50)">
+        <circle r="46" className={accent} fill="currentColor" opacity={0.2} />
+        <circle r="32" className={accent} fill="currentColor" opacity={0.45} />
+        <circle r="18" className={accent} fill="currentColor" opacity={0.75} />
+        <circle r="5" className="text-white dark:text-slate-900" fill="currentColor" />
+      </g>
+    </svg>
+  );
+}
+
+function MilkOrigin() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(65, 55)" className={dim} stroke="currentColor" strokeWidth={2.5} fill="none" strokeLinecap="round">
+        <ellipse cx="0" cy="0" rx="34" ry="18" />
+        <circle cx="-38" cy="-8" r="10" fill="none" />
+        <line x1="-18" y1="16" x2="-18" y2="34" />
+        <line x1="0" y1="18" x2="0" y2="36" />
+        <line x1="18" y1="16" x2="18" y2="34" />
+      </g>
+      <Arrow x1={135} y1={55} x2={185} y2={55} />
+      <path d="M 205 30 L 245 30 L 240 85 L 210 85 Z" className={dim} stroke="currentColor" strokeWidth={2} fill="none" />
+      <path d="M 208 55 L 242 55 L 240 85 L 210 85 Z" className={accent} fill="currentColor" opacity={0.8} />
+    </svg>
+  );
+}
+
+function BeeBehavior() {
+  const hex = (cx: number, cy: number, r: number) => {
+    const pts = Array.from({ length: 6 }, (_, i) => {
+      const a = (Math.PI / 3) * i - Math.PI / 6;
+      return `${cx + r * Math.cos(a)},${cy + r * Math.sin(a)}`;
+    });
+    return pts.join(" ");
+  };
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g className={dim} stroke="currentColor" strokeWidth={1.5} fill="none">
+        <polygon points={hex(90, 50, 24)} />
+        <polygon points={hex(134, 26, 24)} />
+        <polygon points={hex(134, 74, 24)} />
+        <polygon points={hex(178, 50, 24)} />
+      </g>
+      <g transform="translate(220, 50) rotate(-10)">
+        <ellipse cx="16" cy="-10" rx="12" ry="7" className="text-slate-300 dark:text-slate-600" fill="currentColor" opacity={0.7} />
+        <ellipse cx="16" cy="10" rx="12" ry="7" className="text-slate-300 dark:text-slate-600" fill="currentColor" opacity={0.7} />
+        <ellipse cx="0" cy="0" rx="20" ry="11" className="text-amber-500" fill="currentColor" />
+        <line x1="-8" y1="-10" x2="-8" y2="10" className="text-slate-900 dark:text-slate-950" stroke="currentColor" strokeWidth={2.5} />
+        <line x1="2" y1="-10" x2="2" y2="10" className="text-slate-900 dark:text-slate-950" stroke="currentColor" strokeWidth={2.5} />
+      </g>
+    </svg>
+  );
+}
+
+function PainReceptors() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <rect x="20" y="15" width="260" height="70" rx="8" className={muted} fill="currentColor" opacity={0.3} />
+      <rect x="20" y="15" width="260" height="24" rx="8" className={accent} fill="currentColor" opacity={0.6} />
+      <rect x="20" y="39" width="260" height="24" className={accent} fill="currentColor" opacity={0.35} />
+      {[70, 130, 190, 250].map((x, i) => (
+        <g key={i}>
+          <circle cx={x} cy={27} r={4} className="text-amber-500" fill="currentColor" />
+          <line x1={x} y1={20} x2={x} y2={5} className="text-amber-500" stroke="currentColor" strokeWidth={2} strokeLinecap="round" />
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function TimeRelativity() {
+  const clock = (cx: number, cy: number, r: number, hourAngle: number) => (
+    <g>
+      <circle cx={cx} cy={cy} r={r} className={dim} stroke="currentColor" strokeWidth={2} fill="none" />
+      <line
+        x1={cx}
+        y1={cy}
+        x2={cx + r * 0.5 * Math.cos(hourAngle)}
+        y2={cy + r * 0.5 * Math.sin(hourAngle)}
+        className={accent}
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+      <line
+        x1={cx}
+        y1={cy}
+        x2={cx + r * 0.75 * Math.cos(hourAngle + 2)}
+        y2={cy + r * 0.75 * Math.sin(hourAngle + 2)}
+        className={accent}
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+      />
+    </g>
+  );
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(55, 50)">{clock(0, 0, 34, -1.2)}</g>
+      <Arrow x1={105} y1={50} x2={150} y2={50} />
+      <g transform="translate(230, 50)">
+        {Array.from({ length: 5 }, (_, i) => (
+          <g key={i} transform={`translate(${(i - 2) * 16}, 0)`}>
+            {clock(0, 0, 12, -1.2)}
+          </g>
+        ))}
+      </g>
+    </svg>
+  );
+}
+
 const diagrams: Record<string, () => ReactElement> = {
   embryology: Embryology,
   "cosmic-expansion": CosmicExpansion,
@@ -308,6 +437,12 @@ const diagrams: Record<string, () => ReactElement> = {
   fingerprints: Fingerprint,
   "day-night-wrapping": DayNightWrapping,
   "lowest-point-earth": LowestPoint,
+  "nutfah-fluid-origin": FluidOrigin,
+  "three-darknesses": ThreeDarknesses,
+  "milk-origin": MilkOrigin,
+  "bee-behavior": BeeBehavior,
+  "pain-receptors-skin": PainReceptors,
+  "time-relativity": TimeRelativity,
 };
 
 const diagramCaptions: Record<string, string> = {
@@ -325,6 +460,12 @@ const diagramCaptions: Record<string, string> = {
   fingerprints: "a distinct, individual pattern",
   "day-night-wrapping": "day and night curving continuously around a globe",
   "lowest-point-earth": "a dip below the surrounding elevation",
+  "nutfah-fluid-origin": "a small quantity of fluid, developing into a cell",
+  "three-darknesses": "three nested layers of darkness around a center",
+  "milk-origin": "from a grazing animal to a pure, separate product",
+  "bee-behavior": "structured cells built in a repeating hexagonal pattern",
+  "pain-receptors-skin": "sensation points concentrated near the surface",
+  "time-relativity": "one unit of time on one scale, many on another",
 };
 
 export function ScienceDiagram({ id }: { id: string }) {
