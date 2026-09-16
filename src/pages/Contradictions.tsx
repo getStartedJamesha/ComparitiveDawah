@@ -71,9 +71,19 @@ export default function Contradictions() {
             </div>
 
             <div className="mt-6 space-y-6">
-              {items.map((item) => (
-                <ContradictionCard key={item.id} item={item} />
-              ))}
+              {items.map((item, i) => {
+                const showGroupHeading = item.group !== items[i - 1]?.group;
+                return (
+                  <div key={item.id}>
+                    {showGroupHeading && (
+                      <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                        {item.group}
+                      </h3>
+                    )}
+                    <ContradictionCard item={item} />
+                  </div>
+                );
+              })}
             </div>
           </section>
         );
