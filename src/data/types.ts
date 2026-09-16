@@ -47,6 +47,8 @@ export interface Passage {
 export interface Contradiction {
   id: string;
   religionId: ContradictionReligionId;
+  /** Lightweight thematic subheading shown when it differs from the previous entry in the same religion's list. */
+  group: string;
   title: string;
   description: string;
   passages: Passage[];
