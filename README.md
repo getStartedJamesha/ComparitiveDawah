@@ -38,7 +38,11 @@ step-by-step guide, including a systemd service so it survives reboots.
 - `src/components/` — shared UI (layout, verse/contradiction/science/
   prophecy cards).
 - `src/pages/` — routed pages: Home, Concepts, Concept detail, Religions,
-  Religion detail, Contradictions, Science, Prophecies, Sources.
+  Religion detail, Contradictions, Science, Prophecies, Search, Sources.
+- `src/search/searchIndex.ts` — builds a single searchable index over every
+  concept, verse, contradiction, science topic, and prophecy from the data
+  files above. New content in `src/data/` is automatically searchable; no
+  index to maintain by hand.
 
 ## A note on the Science and Prophecies sections
 

@@ -3,7 +3,10 @@ import { ScienceDiagram } from "./ScienceDiagrams";
 
 export default function ScienceCard({ topic }: { topic: ScienceTopic }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <div
+      id={topic.id}
+      className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
       <div className="flex items-center justify-between gap-2">
         <h3 className="font-serif text-xl font-semibold">{topic.title}</h3>
         <span className="rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-teal-700 dark:bg-teal-950 dark:text-teal-400">
