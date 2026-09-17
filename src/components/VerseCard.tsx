@@ -9,7 +9,8 @@ export default function VerseCard({
 }) {
   return (
     <div
-      className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+      id={`${verse.religionId}-${verse.conceptId}`}
+      className="scroll-mt-24 flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
       style={{ borderTopColor: religion.accent, borderTopWidth: 4 }}
     >
       <div className="flex items-center justify-between gap-2">

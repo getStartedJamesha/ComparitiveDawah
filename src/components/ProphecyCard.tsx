@@ -2,7 +2,10 @@ import type { Prophecy } from "../data/types";
 
 export default function ProphecyCard({ item }: { item: Prophecy }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <div
+      id={item.id}
+      className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
       <h3 className="font-serif text-xl font-semibold">{item.title}</h3>
 
       {item.passage ? (

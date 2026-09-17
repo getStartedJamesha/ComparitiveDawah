@@ -70,7 +70,7 @@ export const prophecies: Prophecy[] = [
         "https://www.biblegateway.com/passage/?search=John+14%3A16%3B+16%3A7&version=KJV",
     },
     claim:
-      "Some Muslim commentators identify the 'Comforter' (Greek parakletos) with Muhammad, connecting it to Qur'an 61:6, where Jesus foretells a messenger to come 'whose name is Ahmad' — built from the same root as 'Muhammad,' meaning 'praised.' This reading is sometimes supported by proposing the original Greek was periklytos ('renowned, praised one,' close in meaning to Ahmad), later altered to parakletos.",
+      "Some Muslim commentators identify the 'Comforter' (Greek parakletos, commonly transliterated as 'the Paraclete') with Muhammad, connecting it to Qur'an 61:6, where Jesus foretells a messenger to come 'whose name is Ahmad' — built from the same root as 'Muhammad,' meaning 'praised.' This reading is sometimes supported by proposing the original Greek was periklytos ('renowned, praised one,' close in meaning to Ahmad), later altered to parakletos.",
     context:
       "Every surviving Greek manuscript of John reads parakletos at each of these verses — there is no manuscript evidence for an original periklytos reading anywhere in the textual record; this is a proposed theory, not an attested variant. Mainstream Christian tradition identifies the Comforter as the Holy Spirit, based on John 14:26 in the very same discourse: 'the Comforter, which is the Holy Ghost, whom the Father will send in my name.'",
   },

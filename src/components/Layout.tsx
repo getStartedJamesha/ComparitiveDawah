@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 const navItems = [
   { to: "/", label: "Home", end: true },
@@ -19,7 +20,27 @@ function linkClasses(isActive: boolean) {
   ].join(" ");
 }
 
+function useScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo({ top: 0 });
+      return;
+    }
+    const id = decodeURIComponent(location.hash.slice(1));
+    // Wait a frame so the target route's content has committed to the DOM
+    // before we look for the element to scroll to.
+    const raf = requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ block: "start" });
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [location]);
+}
+
 export default function Layout() {
+  useScrollToHash();
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90">
@@ -29,7 +50,7 @@ export default function Layout() {
               One God, Many Scriptures
             </span>
           </NavLink>
-          <nav className="flex flex-wrap gap-1">
+          <nav className="flex flex-wrap items-center gap-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -40,6 +61,28 @@ export default function Layout() {
                 {item.label}
               </NavLink>
             ))}
+            <NavLink
+              to="/search"
+              aria-label="Search"
+              className={({ isActive }) =>
+                [
+                  "ml-1 flex h-8 w-8 items-center justify-center rounded-full transition-colors",
+                  isActive
+                    ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
+                    : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800",
+                ].join(" ")
+              }
+            >
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                className="h-4 w-4"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.8" />
+                <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            </NavLink>
           </nav>
         </div>
       </header>
