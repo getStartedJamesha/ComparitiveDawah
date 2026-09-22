@@ -85,6 +85,31 @@ export const contradictions: Contradiction[] = [
     note: "Common harmonizations propose that Luke traces Mary's line (with Joseph as son-in-law to Heli) or that one genealogy is legal/royal while the other is biological — neither reading is stated explicitly in the text itself. The genealogies also differ substantially in their full lists of names and generation counts (compare Matthew 1:17's summary with Luke 3:23-38), which the same harmonizations are generally taken to address as well.",
   },
   {
+    id: "christianity-shealtiel-father",
+    religionId: "christianity",
+    group: "Birth & Genealogy",
+    title: "Shealtiel's Father: Jeconiah, or Neri?",
+    description:
+      "Both genealogies place Zerubbabel's father as Shealtiel, but name different fathers for Shealtiel himself: Matthew has Jeconiah (Jechonias), while Luke has Neri — one of several individual name discrepancies within genealogies that otherwise briefly share the same names at this point.",
+    passages: [
+      {
+        reference: "Matthew 1:12",
+        text: "And after they were brought to Babylon, Jechonias begat Salathiel; and Salathiel begat Zorobabel;",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+1%3A12&version=KJV",
+      },
+      {
+        reference: "Luke 3:27",
+        text: "...which was the son of Salathiel, which was the son of Neri,",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Luke+3%3A27&version=KJV",
+      },
+    ],
+    note: "A smaller, more technical example of the broader genealogy divergence, but a notable one since it falls at a point where the two lists otherwise briefly converge on the same names (Shealtiel, Zerubbabel) after diverging earlier at David's sons. Harmonists sometimes propose a levirate marriage (compare Deuteronomy 25:5-6) or legal adoption explains the differing father named, though the text doesn't state this explicitly.",
+  },
+  {
     id: "christianity-nativity-chronology",
     religionId: "christianity",
     group: "Birth & Genealogy",
@@ -108,6 +133,31 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "One of the more discussed chronological puzzles in New Testament scholarship. Proposed harmonizations include an earlier, otherwise unattested census, or an earlier term of governance by Quirinius not recorded elsewhere; other scholars, including some who are otherwise traditionalist, conclude the two nativity accounts were composed from independent, imprecise chronological traditions rather than a single reconcilable timeline. The Roman-era historian Josephus is the primary ancient source dating Quirinius's census to 6 CE.",
+  },
+  {
+    id: "christianity-holy-family-location",
+    religionId: "christianity",
+    group: "Birth & Genealogy",
+    title: "Where Did the Holy Family Live?",
+    description:
+      "Matthew's narrative reads as though Bethlehem was the family's original home — the birth, the magi visiting 'the house' (2:11), and the flight to Egypt are followed by a deliberate, fearful decision to relocate to Nazareth only afterward (2:22-23); Luke instead has the family living in Nazareth from before the birth, traveling to Bethlehem only for the census, and returning to Nazareth within weeks, with no mention of Egypt at all.",
+    passages: [
+      {
+        reference: "Matthew 2:22-23",
+        text: "But when he heard that Archelaus did reign in Judaea in the room of his father Herod, he was afraid to go thither: notwithstanding, being warned of God in a dream, he turned aside into the parts of Galilee: And he came and dwelt in a city called Nazareth.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+2%3A22-23&version=KJV",
+      },
+      {
+        reference: "Luke 2:4,39",
+        text: "And Joseph also went up from Galilee, out of the city of Nazareth, into Judaea, unto the city of David, which is called Bethlehem... And when they had performed all things according to the law of the Lord, they returned into Galilee, to their own city Nazareth.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Luke+2%3A4%2C39&version=KJV",
+      },
+    ],
+    note: "Harmonists combine the two by inserting Matthew's Egypt narrative into a gap in Luke's account — for instance, after the Temple presentation in Luke 2:22-39 (traditionally 40 days after birth) but before the family's return to Nazareth described in that same verse. This requires reading Luke 2:39's 'returned into Galilee' as compressed, skipping over the flight to Egypt it doesn't mention, similar to how Luke-Acts elsewhere summarizes events without flagging every time gap.",
   },
   {
     id: "christianity-blind-men-jericho",
@@ -188,16 +238,16 @@ export const contradictions: Contradiction[] = [
     id: "christianity-disciples-staffs",
     religionId: "christianity",
     group: "Jesus's Ministry",
-    title: "Were the Disciples Allowed to Carry a Staff?",
+    title: "Were the Disciples Allowed to Carry a Staff, or Sandals?",
     description:
-      "Sending out the Twelve, Mark's Jesus permits them to carry a staff; Matthew's version of the same instructions specifically forbids taking one.",
+      "Sending out the Twelve, Mark's Jesus permits them to carry a staff and directs them to wear sandals; Matthew's version of the same instructions specifically forbids taking a staff, and also forbids shoes.",
     passages: [
       {
-        reference: "Mark 6:8",
-        text: "And commanded them that they should take nothing for their journey, save a staff only; no scrip, no bread, no money in their purse.",
+        reference: "Mark 6:8-9",
+        text: "And commanded them that they should take nothing for their journey, save a staff only; no scrip, no bread, no money in their purse: But be shod with sandals; and not put on two coats.",
         translation: "King James Version",
         sourceUrl:
-          "https://www.biblegateway.com/passage/?search=Mark+6%3A8&version=KJV",
+          "https://www.biblegateway.com/passage/?search=Mark+6%3A8-9&version=KJV",
       },
       {
         reference: "Matthew 10:9-10",
@@ -207,7 +257,82 @@ export const contradictions: Contradiction[] = [
           "https://www.biblegateway.com/passage/?search=Matthew+10%3A9-10&version=KJV",
       },
     ],
-    note: "A minor but frequently noted difference between otherwise closely parallel instructions. Harmonists sometimes distinguish acquiring a staff (Matthew's verb can carry the sense 'provide/acquire') from already carrying one they owned (Mark's wording) — don't go out of your way to get one, but one you already have is fine. Source critics more often read it as ordinary variation in how Matthew and Mark each recorded or adapted a shared underlying tradition, without assuming either is being maximally precise about every detail of the instruction's wording.",
+    note: "A minor but frequently noted difference between otherwise closely parallel instructions. Harmonists sometimes distinguish acquiring a staff or sandals (Matthew's verb can carry the sense 'provide/acquire') from already carrying ones they owned (Mark's wording) — don't go out of your way to get one, but what you already have is fine. Source critics more often read it as ordinary variation in how Matthew and Mark each recorded or adapted a shared underlying tradition, without assuming either is being maximally precise about every detail of the instruction's wording.",
+  },
+  {
+    id: "christianity-fig-tree",
+    religionId: "christianity",
+    group: "Jesus's Ministry",
+    title: "The Fig Tree: Withered at Once, or Overnight?",
+    description:
+      "Matthew narrates Jesus cursing a fig tree and the disciples marveling that it withered 'presently' (immediately); Mark splits the same episode across two days — Jesus curses the tree one morning, and the disciples only notice it withered when passing by the next morning, with the temple-cleansing episode narrated in between.",
+    passages: [
+      {
+        reference: "Matthew 21:19-20",
+        text: "And when he saw a fig tree in the way, he came to it, and found nothing thereon, but leaves only, and said unto it, Let no fruit grow on thee henceforward for ever. And presently the fig tree withered away. And when the disciples saw it, they marvelled, saying, How soon is the fig tree withered away!",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+21%3A19-20&version=KJV",
+      },
+      {
+        reference: "Mark 11:20-21",
+        text: "And in the morning, as they passed by, they saw the fig tree dried up from the roots. And Peter calling to remembrance saith unto him, Master, behold, the fig tree which thou cursedst is withered away.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Mark+11%3A20-21&version=KJV",
+      },
+    ],
+    note: "A commonly cited example of Matthew's tendency to compress Markan material (see also Jairus's daughter, above) — narrating the visible result immediately after the cause, without necessarily claiming the withering was instantaneous rather than simply unnoticed until the next day. Both accounts agree on the substance: Jesus cursed the tree, and it withered as a result.",
+  },
+  {
+    id: "christianity-centurion",
+    religionId: "christianity",
+    group: "Jesus's Ministry",
+    title: "Did the Centurion Speak to Jesus Directly?",
+    description:
+      "Matthew narrates the centurion approaching Jesus directly and speaking to him in person; Luke has the centurion send Jewish elders, and later friends, as intermediaries, with no direct meeting between Jesus and the centurion narrated at all.",
+    passages: [
+      {
+        reference: "Matthew 8:5-6",
+        text: "And when Jesus was entered into Capernaum, there came unto him a centurion, beseeching him, And saying, Lord, my servant lieth at home sick of the palsy, grievously tormented.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+8%3A5-6&version=KJV",
+      },
+      {
+        reference: "Luke 7:3-6",
+        text: "And when he heard of Jesus, he sent unto him the elders of the Jews, beseeching him that he would come and heal his servant... Then Jesus went with them. And when he was now not far from the house, the centurion sent friends to him, saying unto him, Lord, trouble not thyself.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Luke+7%3A3-6&version=KJV",
+      },
+    ],
+    note: "A common harmonization reads Matthew as compressing the story for narrative economy — attributing the message to the centurion himself, since it was made and delivered at his request and in his name, much as a person today might be said to have 'told' someone something a messenger relayed on their behalf. This kind of compression, attributing an intermediary's action directly to the person who sent them, is a recognized feature of ancient biographical writing generally, not unique to Matthew.",
+  },
+  {
+    id: "christianity-twelve-disciples",
+    religionId: "christianity",
+    group: "Jesus's Ministry",
+    title: "Thaddaeus, or Judas Son of James?",
+    description:
+      "Matthew's (and Mark's) list of the Twelve includes 'Lebbaeus, whose surname was Thaddaeus'; Luke's list — in both his Gospel and the book of Acts — has no Thaddaeus at all, listing instead 'Judas the brother of James' in roughly the same position.",
+    passages: [
+      {
+        reference: "Matthew 10:3",
+        text: "Philip, and Bartholomew; Thomas, and Matthew the publican; James the son of Alphaeus, and Lebbaeus, whose surname was Thaddaeus;",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+10%3A3&version=KJV",
+      },
+      {
+        reference: "Luke 6:15-16",
+        text: "Matthew and Thomas, James the son of Alphaeus, and Simon called Zelotes, And Judas the brother of James, and Judas Iscariot, which also was the traitor.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Luke+6%3A15-16&version=KJV",
+      },
+    ],
+    note: "Widely harmonized by proposing Thaddaeus and 'Judas the brother/son of James' (also called Jude) are the same person known by more than one name, similar to how Simon Peter, Matthew/Levi, and Nathanael/Bartholomew are each referred to by different names across the Gospels. No text explicitly states this identification, but it's the standard traditional reading, reflected in how later Christian tradition refers to 'Jude Thaddaeus' as one apostle.",
   },
   {
     id: "christianity-judas-death",
@@ -335,6 +460,81 @@ export const contradictions: Contradiction[] = [
     note: "A long-debated chronological difference. Proposed harmonizations include the possibility that different groups in first-century Judea followed different calendars and so observed Passover on different days that year, or that John's 'preparation' means the Friday of Passover week generally rather than the specific day before Passover began. Most scholars agree the two timelines, read at face value, describe different days for the same events.",
   },
   {
+    id: "christianity-robe-color",
+    religionId: "christianity",
+    group: "The Crucifixion",
+    title: "The Robe: Scarlet, or Purple?",
+    description:
+      "Matthew describes the soldiers mocking Jesus by dressing him in a scarlet robe; Mark (and John) describe the same robe as purple.",
+    passages: [
+      {
+        reference: "Matthew 27:28",
+        text: "And they stripped him, and put on him a scarlet robe.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+27%3A28&version=KJV",
+      },
+      {
+        reference: "Mark 15:17",
+        text: "And they clothed him with purple, and platted a crown of thorns, and put it about his head,",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Mark+15%3A17&version=KJV",
+      },
+    ],
+    note: "Widely regarded as one of the more trivial Synoptic differences, commonly explained by the fact that in the ancient world, cheap reddish-purple or crimson dyes were visually similar and the color terms for them overlapped considerably — an inexpensive mock 'royal' robe could plausibly be described as either 'scarlet' or 'purple' depending on the exact dye and the describer's vocabulary, especially since genuine royal purple was an expensive dye unlikely to be used for mockery. It's often cited less as a substantive contradiction and more as an example of incidental, unharmonized eyewitness-style variation.",
+  },
+  {
+    id: "christianity-drink-offered",
+    religionId: "christianity",
+    group: "The Crucifixion",
+    title: "The Drink Offered: Gall, or Myrrh?",
+    description:
+      "Matthew describes Jesus being offered wine mixed with 'gall' before the crucifixion; Mark describes the same offer as wine mixed with 'myrrh.'",
+    passages: [
+      {
+        reference: "Matthew 27:34",
+        text: "They gave him vinegar to drink mingled with gall: and when he had tasted thereof, he would not drink.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+27%3A34&version=KJV",
+      },
+      {
+        reference: "Mark 15:23",
+        text: "And they gave him to drink wine mingled with myrrh: but he received it not.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Mark+15%3A23&version=KJV",
+      },
+    ],
+    note: "Commonly read as complementary rather than conflicting: myrrh is bitter-tasting, so Matthew's 'gall' (a general Greek term for something bitter) may simply describe the taste of the same myrrh-drugged wine Mark names more specifically, rather than naming a different substance. Matthew's wording may also deliberately echo Psalm 69:21 ('they gave me gall for my meat'), a psalm early Christians read as prophetic of the crucifixion — suggesting Matthew's word choice could be shaped by that allusion as much as by a literal ingredient list.",
+  },
+  {
+    id: "christianity-criminals-mocked",
+    religionId: "christianity",
+    group: "The Crucifixion",
+    title: "Did Both Criminals Mock Jesus?",
+    description:
+      "Matthew (and Mark) describe both criminals crucified alongside Jesus mocking him; Luke describes only one mocking him, while the other rebukes his companion and asks Jesus to remember him.",
+    passages: [
+      {
+        reference: "Matthew 27:44",
+        text: "The thieves also, which were crucified with him, cast the same in his teeth.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+27%3A44&version=KJV",
+      },
+      {
+        reference: "Luke 23:39-43",
+        text: "And one of the malefactors which were hanged railed on him... But the other answering rebuked him... And he said unto Jesus, Lord, remember me when thou comest into thy kingdom. And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Luke+23%3A39-43&version=KJV",
+      },
+    ],
+    note: "A commonly proposed harmonization reads Matthew's plural description as a generalization — both criminals initially mocked Jesus, as Matthew and Mark record, and one later changed his attitude over the hours of the crucifixion, as Luke separately narrates. Harmonists generally favor this sequential reading over treating the accounts as strictly incompatible, since Matthew doesn't explicitly rule out a change of heart partway through, but Luke's account gives no indication either criminal ever mocked Jesus at all, which is the detail some critical scholars see as the harder point to reconcile.",
+  },
+  {
     id: "christianity-last-words",
     religionId: "christianity",
     group: "The Crucifixion",
@@ -397,11 +597,11 @@ export const contradictions: Contradiction[] = [
     group: "The Resurrection",
     title: "The Resurrection Accounts: How Many Angels?",
     description:
-      "The four Gospels differ on how many heavenly figures the women encountered at the tomb, and how they're described: one angel in Matthew, a 'young man' in Mark, two men in Luke, and two angels in John.",
+      "The four Gospels differ on how many heavenly figures the women encountered at the tomb, and how they're described: one angel in Matthew (sitting on the stone outside), a 'young man' in Mark, two men in Luke, and two angels in John (sitting inside, where the body had lain).",
     passages: [
       {
         reference: "Matthew 28:2,5",
-        text: "...the angel of the Lord descended from heaven... And the angel answered and said unto the women, Fear not ye.",
+        text: "...the angel of the Lord descended from heaven, and came and rolled back the stone from the door, and sat upon it... And the angel answered and said unto the women, Fear not ye.",
         translation: "King James Version",
         sourceUrl:
           "https://www.biblegateway.com/passage/?search=Matthew+28%3A2%2C5&version=KJV",
@@ -428,7 +628,7 @@ export const contradictions: Contradiction[] = [
           "https://www.biblegateway.com/passage/?search=John+20%3A12&version=KJV",
       },
     ],
-    note: "Harmonists suggest one figure spoke while a second was present but silent, and that Mark's 'young man' is the same kind of being described more plainly elsewhere as an angel. Critical scholars point to the differing counts and descriptions as evidence the resurrection narratives circulated independently before being written down.",
+    note: "Harmonists suggest one figure spoke while a second was present but silent, that Mark's 'young man' is the same kind of being described more plainly elsewhere as an angel, and that the angel(s) could have moved between sitting on the stone outside and inside the tomb across the span the various visits cover. Critical scholars point to the differing counts, descriptions, and positions as evidence the resurrection narratives circulated independently before being written down.",
   },
   {
     id: "christianity-resurrection-women-count",
@@ -470,6 +670,31 @@ export const contradictions: Contradiction[] = [
     note: "Harmonists often read John as narrowing in on Mary Magdalene's part in a larger group implied just after — she says 'we do not know' (plural) in John 20:2. Critical scholars instead see the differing lists as evidence the resurrection tradition developed through separate accounts before being written down.",
   },
   {
+    id: "christianity-women-told",
+    religionId: "christianity",
+    group: "The Resurrection",
+    title: "Did the Women Tell Anyone?",
+    description:
+      "Mark's account, in its earliest and best-attested manuscripts, has the women fleeing the tomb and telling no one out of fear; Matthew has the same women running immediately to report what they'd seen to the disciples.",
+    passages: [
+      {
+        reference: "Mark 16:8",
+        text: "And they went out quickly, and fled from the sepulchre; for they trembled and were amazed: neither said they any thing to any man; for they were afraid.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Mark+16%3A8&version=KJV",
+      },
+      {
+        reference: "Matthew 28:8",
+        text: "And they departed quickly from the sepulchre with fear and great joy; and did run to bring his disciples word.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+28%3A8&version=KJV",
+      },
+    ],
+    note: "Connects to a well-known textual question: the verses following Mark 16:8 in most Bibles (16:9-20, the 'longer ending') are widely regarded by textual scholars, based on the earliest surviving Greek manuscripts, as a later addition rather than part of Mark's original text — meaning Mark's Gospel may have been intended to end on the women's silence and fear as a deliberate, unsettling literary choice. Harmonists more often read 16:8's 'said nothing to any man' as describing a brief, immediate silence born of shock, on the way to telling the disciples exactly as Matthew describes moments later, rather than a lasting silence.",
+  },
+  {
     id: "christianity-first-witness",
     religionId: "christianity",
     group: "The Resurrection",
@@ -500,6 +725,31 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "Harmonists usually propose a sequence — Mary Magdalene first, then Peter, then the wider group of women — since none of the texts explicitly claims to give an exhaustive, ordered list. Notably, 1 Corinthians 15:3-8, often considered one of the earliest written creedal summaries in the New Testament, does not mention the women's testimony at all, which some scholars connect to the low evidentiary status given to women's testimony in that era.",
+  },
+  {
+    id: "christianity-eleven-or-twelve",
+    religionId: "christianity",
+    group: "The Resurrection",
+    title: "Eleven Disciples, or Twelve?",
+    description:
+      "By the time of this resurrection appearance, only eleven disciples remained (Judas having died); Matthew accordingly says 'the eleven,' while Paul's early creedal summary says Jesus appeared to 'the twelve.'",
+    passages: [
+      {
+        reference: "Matthew 28:16",
+        text: "Then the eleven disciples went away into Galilee, into a mountain where Jesus had appointed them.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+28%3A16&version=KJV",
+      },
+      {
+        reference: "1 Corinthians 15:5",
+        text: "And that he was seen of Cephas, then of the twelve:",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A5&version=KJV",
+      },
+    ],
+    note: "Widely read as Paul using 'the Twelve' as a fixed title for the apostolic group as a whole — much like a sports team keeps its name even when missing a player — rather than a literal headcount at that specific appearance; this usage is well attested in how the group is referred to elsewhere in the New Testament even after Judas's death and before Matthias's replacement was chosen (compare Acts 6:2). It's a minor example of the same general point raised elsewhere on this page: numbers and titles in these texts aren't always used with modern statistical precision.",
   },
   {
     id: "christianity-meet-where",
@@ -609,6 +859,31 @@ export const contradictions: Contradiction[] = [
     note: "Classical commentators distinguish seeing God's unmediated essence (denied) from seeing a manifestation, vision, or divine glory, or simply communicating directly with God (affirmed, and idiomatically called 'face to face') — a distinction the text itself does not spell out.",
   },
   {
+    id: "christianity-jesus-knows-future",
+    religionId: "christianity",
+    group: "The Nature of Christ",
+    title: "Does Jesus Know the Future?",
+    description:
+      "Mark's Jesus states plainly that even the Son does not know the day or hour of the end; John's disciples declare their certainty that Jesus knows all things.",
+    passages: [
+      {
+        reference: "Mark 13:32",
+        text: "But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Mark+13%3A32&version=KJV",
+      },
+      {
+        reference: "John 16:30",
+        text: "Now are we sure that thou knowest all things, and needest not that any man should ask thee: by this we believe that thou camest forth from God.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=John+16%3A30&version=KJV",
+      },
+    ],
+    note: "A significant point in the history of Christology, not merely a modern objection. One long-standing reading distinguishes Jesus's divine nature (which knows all things) from his human nature during the incarnation (which, per Mark, did not access that particular knowledge) — formalized in later doctrine as the distinction between Christ's two natures. John 16:30 is also the disciples' own statement of confidence, not a narrator's claim or Jesus's own words, and its 'all things' is in context about Jesus's insight into their unspoken questions (16:19), not necessarily a claim to exhaustive knowledge of every future date.",
+  },
+  {
     id: "christianity-god-tempt",
     religionId: "christianity",
     group: "God's Nature",
@@ -632,6 +907,106 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "This often turns on translation: the underlying Hebrew (nissah) and Greek (peirazo) both cover a semantic range from 'tempt' (toward evil) to 'test' (to prove character), and many modern translations (e.g. NIV, ESV) render Genesis 22:1 as God 'testing' Abraham specifically to avoid this apparent clash with James — the KJV's use of 'tempt' for both was standard in 1611 English but reads differently today. Classical Jewish commentary likewise reads Genesis 22:1 as a test of faith, not an enticement to sin.",
+  },
+  {
+    id: "christianity-god-evil",
+    religionId: "christianity",
+    group: "God's Nature",
+    title: "Does God Cause Evil?",
+    description:
+      "Isaiah has God declaring that He creates 'evil' alongside light, peace, and darkness; James states that God cannot be tempted by evil and tempts no one toward it.",
+    passages: [
+      {
+        reference: "Isaiah 45:7",
+        text: "I form the light, and create darkness: I make peace, and create evil: I the LORD do all these things.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Isaiah+45%3A7&version=KJV",
+      },
+      {
+        reference: "James 1:13",
+        text: "Let no man say when he is tempted, I am tempted of God: for God cannot be tempted with evil, neither tempteth he any man.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=James+1%3A13&version=KJV",
+      },
+    ],
+    note: "Largely turns on the range of the Hebrew word ra ('evil') in Isaiah 45:7, which — like its English counterpart in older translations — covers both moral evil and calamity/disaster; most modern translations (e.g. NIV, ESV, NASB) render it 'disaster' or 'calamity' here specifically because the immediate context contrasts it with 'peace' (shalom, well-being generally), not with moral goodness. Read this way, Isaiah claims God sends both prosperity and hardship as sovereign acts, not that God is the source of moral wrongdoing — the same distinction at stake in the 'Does God Tempt People?' entry above.",
+  },
+  {
+    id: "christianity-god-omniscience",
+    religionId: "christianity",
+    group: "God's Nature",
+    title: "Does God Know Everything?",
+    description:
+      "The Psalms affirm that God knows a person's words before they're even spoken; in Genesis, the angel of the LORD tells Abraham 'now I know' that he fears God — after, not before, Abraham's willingness to sacrifice Isaac was demonstrated.",
+    passages: [
+      {
+        reference: "Psalm 139:4",
+        text: "For there is not a word in my tongue, but, lo, O LORD, thou knowest it altogether.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Psalm+139%3A4&version=KJV",
+      },
+      {
+        reference: "Genesis 22:12",
+        text: "And he said, Lay not thine hand upon the lad, neither do thou any thing unto him: for now I know that thou fearest God, seeing thou hast not withheld thy son, thine only son from me.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Genesis+22%3A12&version=KJV",
+      },
+    ],
+    note: "Classical commentators generally read 'now I know' as an example of God's foreknowledge being confirmed or demonstrated in observable action rather than newly acquired — similar to how a person might say 'now I know you mean it' about something they already believed, once it's been proven. Some also note it's the angel of the LORD, not God directly, who speaks the line in Genesis 22:11-12, though angel-of-the-LORD passages elsewhere in the Torah speak in God's own voice and are often read as direct divine communication.",
+  },
+  {
+    id: "christianity-god-peace-or-war",
+    religionId: "christianity",
+    group: "God's Nature",
+    title: "A God of Peace, or of War?",
+    description:
+      "Paul describes God as a God of peace, not of confusion; the Song of the Sea describes God as 'a man of war.'",
+    passages: [
+      {
+        reference: "1 Corinthians 14:33",
+        text: "For God is not the author of confusion, but of peace, as in all churches of the saints.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=1+Corinthians+14%3A33&version=KJV",
+      },
+      {
+        reference: "Exodus 15:3",
+        text: "The LORD is a man of war: the LORD is his name.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Exodus+15%3A3&version=KJV",
+      },
+    ],
+    note: "Commentators generally read these as addressing different domains rather than conflicting: Exodus 15 is victory poetry describing God's decisive action defending Israel at the Red Sea, using martial imagery common to ancient Near Eastern praise of a deity as divine warrior on a people's behalf, while 1 Corinthians 14:33 addresses orderly conduct within church worship gatherings specifically, not God's total character or God's relationship to warfare in general. Both descriptions — God as one who acts to establish order (including through conflict) and God who is not the source of chaotic confusion — are held throughout the Bible without either passage claiming to describe God exhaustively.",
+  },
+  {
+    id: "christianity-god-loves-everyone",
+    religionId: "christianity",
+    group: "God's Nature",
+    title: "Does God Love Everyone?",
+    description:
+      "John's Gospel has God so loving 'the world' that He gave His only Son; the Psalms describe God hating all who do iniquity.",
+    passages: [
+      {
+        reference: "John 3:16",
+        text: "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=John+3%3A16&version=KJV",
+      },
+      {
+        reference: "Psalm 5:5",
+        text: "The foolish shall not stand in thy sight: thou hatest all workers of iniquity.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Psalm+5%3A5&version=KJV",
+      },
+    ],
+    note: "Theologians distinguish different senses of divine love and hatred at stake here: a general, universal love for humanity as God's creation and the object of the offer of salvation (John 3:16's 'world'), alongside a specific opposition to sin and unrepentant wrongdoing (Psalm 5:5's 'workers of iniquity'). Reformed theology has particularly debated whether love and hatred can be simultaneously true of God toward the same individuals, or whether passages like Psalm 5:5 describe God's stance toward persistent, unrepented evil specifically rather than toward people as such — a live question within Christian theology rather than a settled one.",
   },
   {
     id: "christianity-faith-works",
@@ -684,6 +1059,156 @@ export const contradictions: Contradiction[] = [
     note: "A common harmonizing reading distinguishes 'fulfill' from 'abolish': Matthew has Jesus claiming to fulfill the Law's deeper intent, not cancel it, while Hebrews addresses specifically the Levitical sacrificial and priestly system, arguing it is superseded by Christ's priesthood and sacrifice — a narrower claim about ritual law rather than the Law's moral content as a whole. This distinction between moral, ceremonial, and civil law is a longstanding one in Christian theology, though it is a later systematic framework, not one the New Testament authors state explicitly themselves.",
   },
   {
+    id: "christianity-circumcision-required",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Is Circumcision Required?",
+    description:
+      "Genesis makes circumcision an everlasting covenant obligation, on pain of being 'cut off' from the covenant people; Paul tells Gentile Christians that accepting circumcision would cut them off from Christ instead.",
+    passages: [
+      {
+        reference: "Genesis 17:10,14",
+        text: "This is my covenant, which ye shall keep, between me and you and thy seed after thee; Every man child among you shall be circumcised... And the uncircumcised man child... that soul shall be cut off from his people; he hath broken my covenant.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Genesis+17%3A10%2C14&version=KJV",
+      },
+      {
+        reference: "Galatians 5:2,4",
+        text: "Behold, I Paul say unto you, that if ye be circumcised, Christ shall profit you nothing... Christ is become of no effect unto you, whosoever of you are justified by the law; ye are fallen from grace.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Galatians+5%3A2%2C4&version=KJV",
+      },
+    ],
+    note: "Mainstream Christian theology resolves this by treating circumcision as the specific covenant sign given to Abraham's physical descendants under the Mosaic economy, superseded for entry into the New Covenant by faith and baptism (compare Colossians 2:11-12, which reinterprets circumcision spiritually) — while Judaism continues to read Genesis 17 as a perpetual, literal obligation for Jewish males. Paul's own position in Galatians is specifically about circumcision as a requirement for justification or covenant membership, not a claim that Genesis 17 misdescribed the Abrahamic and Mosaic covenants on their own terms.",
+  },
+  {
+    id: "christianity-sabbath-required",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Is the Sabbath Still Required?",
+    description:
+      "Exodus makes sabbath observance one of the Ten Commandments; Paul tells the Colossian church not to let anyone judge them regarding sabbath observance.",
+    passages: [
+      {
+        reference: "Exodus 20:8-11",
+        text: "Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: But the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Exodus+20%3A8-11&version=KJV",
+      },
+      {
+        reference: "Colossians 2:16",
+        text: "Let no man therefore judge you in meat, or in drink, or in respect of an holyday, or of the new moon, or of the sabbath days:",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Colossians+2%3A16&version=KJV",
+      },
+    ],
+    note: "Christians hold a range of views on this, making it a live internal question rather than a settled one: some traditions (e.g. Seventh-day Adventists, some Reformed sabbatarians) maintain the seventh-day sabbath is still binding; most mainstream traditions read Colossians 2:16-17 (which calls sabbaths 'a shadow of things to come') as declaring the ceremonial sabbath law fulfilled in Christ, while others observe Sunday as a distinct 'Lord's Day' tradition (compare Acts 20:7, Revelation 1:10) rather than a continuation of the seventh-day sabbath under a new name.",
+  },
+  {
+    id: "christianity-dietary-restrictions",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Are the Dietary Laws Still Required?",
+    description:
+      "Leviticus lists specific animals, including pigs, as unclean and forbidden to eat; Mark's narrative aside on Jesus's teaching states that Jesus 'declared all foods clean.'",
+    passages: [
+      {
+        reference: "Leviticus 11:7-8",
+        text: "And the swine... he is unclean to you. Of their flesh shall ye not eat, and their carcase shall ye not touch; they are unclean to you.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Leviticus+11%3A7-8&version=KJV",
+      },
+      {
+        reference: "Mark 7:18-19",
+        text: "And he saith unto them, Are ye so without understanding also? Do ye not perceive, that whatsoever thing from without entereth into the man, it cannot defile him... This he said, making all meats clean.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Mark+7%3A18-19&version=KJV",
+      },
+    ],
+    note: "Mainstream Christian theology reads Mark 7:19's editorial comment as marking a real shift for Jesus's followers, connected to Peter's vision in Acts 10:9-16 ('What God hath cleansed, that call not thou common') and the Jerusalem council's decision not to require Gentile converts to keep the full Mosaic dietary code (Acts 15:19-20). Judaism continues to read Leviticus 11 as a perpetual, literal dietary law (kashrut) for Jews, and some Christian traditions read Mark 7 more narrowly as being about ritual hand-washing (its immediate context, Mark 7:1-5) rather than a wholesale abolition of dietary law.",
+  },
+  {
+    id: "christianity-sacrifice-replaced",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Is Animal Sacrifice Still Needed?",
+    description:
+      "Leviticus establishes animal sacrifice, specifically the shedding of blood, as the divinely appointed means of atonement; Hebrews argues that animal sacrifices could never actually take away sin, and are superseded entirely by Christ's single, final sacrifice.",
+    passages: [
+      {
+        reference: "Leviticus 17:11",
+        text: "For the life of the flesh is in the blood: and I have given it to you upon the altar to make an atonement for your souls: for it is the blood that maketh an atonement for the soul.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Leviticus+17%3A11&version=KJV",
+      },
+      {
+        reference: "Hebrews 10:4,11-12",
+        text: "For it is not possible that the blood of bulls and of goats should take away sins... And every priest standeth daily ministering... offering oftentimes the same sacrifices, which can never take away sins: But this man, after he had offered one sacrifice for sins for ever, sat down on the right hand of God;",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Hebrews+10%3A4%2C11-12&version=KJV",
+      },
+    ],
+    note: "Mainstream Christian theology reads Hebrews as arguing animal sacrifice always pointed forward to, and was fulfilled by, Christ's death, rather than claiming Leviticus was wrong on its own terms — an argument made from within Christian theology, addressed to Jewish Christians tempted to return to Temple sacrifice. Judaism does not accept this typological reading, and its own tradition addressed the end of Temple sacrifice after 70 CE primarily through rabbinic teaching that prayer, repentance, and good deeds substitute for sacrifice in its absence — using logic similar to Hosea 6:6 (see the Judaism section's 'Does God Want Sacrifice?' entry).",
+  },
+  {
+    id: "christianity-eye-for-eye",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "An Eye for an Eye, or Turn the Other Cheek?",
+    description:
+      "Exodus establishes proportional retribution ('an eye for an eye') as a legal principle; Jesus explicitly quotes this principle and tells his listeners not to resist evil, but to turn the other cheek instead.",
+    passages: [
+      {
+        reference: "Exodus 21:23-25",
+        text: "And if any mischief follow, then thou shalt give life for life, Eye for eye, tooth for tooth, hand for hand, foot for foot, Burning for burning, wound for wound, stripe for stripe.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Exodus+21%3A23-25&version=KJV",
+      },
+      {
+        reference: "Matthew 5:38-39",
+        text: "Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth: But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+5%3A38-39&version=KJV",
+      },
+    ],
+    note: "Most commentators read Exodus 21:23-25 (the lex talionis) as originally a judicial principle limiting punishment to proportionality — preventing escalating blood feuds by capping retribution rather than commanding personal vengeance — while Jesus's teaching addresses personal conduct between individuals, not courtroom sentencing. Even so, Jesus explicitly frames his teaching as contrasting with 'an eye for an eye,' one of several such contrasts in the Sermon on the Mount, making this a case where Jesus is presented as intentionally revising a Torah principle's application — a point still debated within Christian ethics regarding self-defense and criminal justice today.",
+  },
+  {
+    id: "christianity-divorce",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Is Divorce Permitted?",
+    description:
+      "Deuteronomy permits a man to divorce his wife by written decree for 'some uncleanness'; Jesus states that Moses only allowed this because of 'the hardness of your hearts,' that it wasn't so 'from the beginning,' and restricts legitimate divorce to cases of sexual immorality.",
+    passages: [
+      {
+        reference: "Deuteronomy 24:1",
+        text: "When a man hath taken a wife, and married her, and it come to pass that she find no favour in his eyes, because he hath found some uncleanness in her: then let him write her a bill of divorcement, and give it in her hand, and send her out of his house.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Deuteronomy+24%3A1&version=KJV",
+      },
+      {
+        reference: "Matthew 19:8-9",
+        text: "He saith unto them, Moses because of the hardness of your hearts suffered you to put away your wives: but from the beginning it was not so. And I say unto you, Whosoever shall put away his wife, except it be for fornication, and shall marry another, committeth adultery.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+19%3A8-9&version=KJV",
+      },
+    ],
+    note: "Jesus's own framing addresses the tension directly, presenting the Deuteronomic provision as a concession to human sinfulness rather than God's original design (pointing back to Genesis 2:24). This is widely accepted within Christian theology as an intentional tightening of the Mosaic provision, though Christians still debate exactly how narrowly 'fornication' should be read, and Deuteronomy 24:1's own phrase 'some uncleanness' was already debated among ancient Jewish schools — the more permissive House of Hillel and the stricter House of Shammai famously disagreed on how broadly it applied, a live debate in Jesus's own era (compare the Pharisees' question in Matthew 19:3).",
+  },
+  {
     id: "christianity-human-perfection",
     religionId: "christianity",
     group: "Doctrine",
@@ -709,6 +1234,106 @@ export const contradictions: Contradiction[] = [
     note: "Commonly read as addressing different registers rather than strictly contradicting one another: Matthew 5:48 caps a section on love of enemies (5:43-48), read by many commentators as a call to complete, undivided love rather than literal moral sinlessness — a goal to strive toward, not a claim already achieved. Romans 3:23 describes universal human moral status as part of Paul's argument for why everyone needs grace. Some theological traditions (e.g. Wesleyan 'Christian perfection') take Matthew 5:48 more literally as attainable in this life, making this a live theological question within Christianity, not just a skeptic's objection.",
   },
   {
+    id: "christianity-eternal-security",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Can Salvation Be Lost?",
+    description:
+      "Jesus states that no one can snatch his sheep out of his hand once given eternal life; Hebrews describes a class of people who were once enlightened and have since 'fallen away,' for whom renewed repentance is said to be impossible.",
+    passages: [
+      {
+        reference: "John 10:28-29",
+        text: "And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand. My Father, which gave them me, is greater than all; and no man is able to pluck them out of my Father's hand.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=John+10%3A28-29&version=KJV",
+      },
+      {
+        reference: "Hebrews 6:4-6",
+        text: "For it is impossible for those who were once enlightened, and have tasted of the heavenly gift... If they shall fall away, to renew them again unto repentance; seeing they crucify to themselves the Son of God afresh, and put him to an open shame.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Hebrews+6%3A4-6&version=KJV",
+      },
+    ],
+    note: "A genuinely live and much-debated question within Christian theology, not a modern skeptical objection: Reformed and many Baptist traditions read John 10 as teaching the perseverance of true believers ('once saved, always saved'), and read Hebrews 6 as describing people exposed to Christian teaching and experience without ever being genuinely regenerate to begin with. Arminian, Wesleyan, and Catholic traditions instead read Hebrews 6 at face value as warning that genuine believers can fall away and lose salvation, and read John 10's 'no one can snatch them' as describing external forces rather than a believer's own choice to abandon faith (compare Matthew 24:13's conditional 'he that endureth to the end shall be saved').",
+  },
+  {
+    id: "christianity-can-believers-sin",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Can Believers Sin?",
+    description:
+      "In the same short letter, John states that whoever is born of God does not sin and cannot sin, while also stating that anyone who claims to be without sin deceives themselves.",
+    passages: [
+      {
+        reference: "1 John 3:9",
+        text: "Whosoever is born of God doth not commit sin; for his seed remaineth in him: and he cannot sin, because he is born of God.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=1+John+3%3A9&version=KJV",
+      },
+      {
+        reference: "1 John 1:8",
+        text: "If we say that we have no sin, we deceive ourselves, and the truth is not in us.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=1+John+1%3A8&version=KJV",
+      },
+    ],
+    note: "Most commentators resolve this within 1 John itself by reading 3:9's 'doth not commit sin' as describing habitual, unrepentant sinning as a settled lifestyle (the Greek present tense verb can carry a continuous sense, 'does not keep on sinning'), consistent with 1 John 2:1's acknowledgment that 'if any man sin, we have an advocate with the Father.' Read this way, 1:8 addresses the false claim to be entirely without any sin at all, while 3:9 addresses whether sin can characterize a believer's ongoing pattern of life — two different questions the same letter is read as holding together rather than contradicting.",
+  },
+  {
+    id: "christianity-unforgivable-sin",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Is Any Sin Truly Unforgivable?",
+    description:
+      "Jesus names one specific, permanently unforgivable sin — blasphemy against the Holy Spirit; John states more generally that confessed sin is always forgiven.",
+    passages: [
+      {
+        reference: "Matthew 12:31-32",
+        text: "Wherefore I say unto you, All manner of sin and blasphemy shall be forgiven unto men: but the blasphemy against the Holy Ghost shall not be forgiven unto men... it shall not be forgiven him, neither in this world, neither in the world to come.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Matthew+12%3A31-32&version=KJV",
+      },
+      {
+        reference: "1 John 1:9",
+        text: "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=1+John+1%3A9&version=KJV",
+      },
+    ],
+    note: "Most commentators read these as operating at different levels: 1 John 1:9 describes God's general willingness to forgive any confessed sin, while Matthew 12:31-32 is usually read as describing a specific, settled state of will — a hardened, final rejection of the Spirit's testimony about Christ (the immediate context is the Pharisees attributing Jesus's Spirit-empowered miracles to Satan) — rather than any single sinful act. On this reading, the 'unforgivable' sin isn't a particular deed but a persistent refusal to seek forgiveness at all, meaning a person troubled by having possibly committed it is, by most pastoral theology, taken as evidence they haven't.",
+  },
+  {
+    id: "christianity-no-one-righteous",
+    religionId: "christianity",
+    group: "Doctrine",
+    title: "Is Anyone Righteous?",
+    description:
+      "Paul, quoting the Psalms, states flatly that no one is righteous; the book of Job opens by describing Job himself as 'perfect and upright,' one who feared God and avoided evil.",
+    passages: [
+      {
+        reference: "Romans 3:10",
+        text: "As it is written, There is none righteous, no, not one:",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Romans+3%3A10&version=KJV",
+      },
+      {
+        reference: "Job 1:1",
+        text: "There was a man in the land of Uz, whose name was Job; and that man was perfect and upright, and one that feared God, and eschewed evil.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Job+1%3A1&version=KJV",
+      },
+    ],
+    note: "Commentators generally read 'righteous' in these two contexts as making different kinds of claims: Job 1:1 describes Job's moral character and conduct relative to other people — sincere, blameless behavior by human standards — while Romans 3:10-18 (quoting Psalm 14 and 53) argues no one meets God's own perfect standard of righteousness, a comparison to divine holiness rather than to other humans. Job himself, later in the book, still distinguishes his own conduct from claiming sinlessness before God (compare Job 9:2-3, 'how should man be just with God?').",
+  },
+  {
     id: "christianity-generation-prophecy",
     religionId: "christianity",
     group: "Doctrine",
@@ -732,6 +1357,31 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "Genuinely debated within Christianity today, not just by outside critics. Preterist interpreters read the promise as fulfilled within that generation — in the Transfiguration that follows immediately in all three Synoptics, in Pentecost, or in Jerusalem's destruction in 70 CE. Futurist interpreters read it as still pending, referring to a yet-future return. 2 Peter 3:8-9, immediately after the verses cited here, addresses the delay theologically ('one day is with the Lord as a thousand years'), showing the question was already alive in the early church.",
+  },
+  {
+    id: "christianity-paul-damascus-road",
+    religionId: "christianity",
+    group: "Paul & Acts",
+    title: "Paul's Damascus Road: Who Heard What?",
+    description:
+      "The book of Acts narrates Paul's Damascus road conversion three times, twice through Paul's own retelling, and the details shift each time: his companions 'hear a voice' in the first account but do not hear it in the second, and either 'stand' or 'fall to the ground' depending on which telling is read.",
+    passages: [
+      {
+        reference: "Acts 9:7",
+        text: "And the men which journeyed with him stood speechless, hearing a voice, but seeing no man.",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Acts+9%3A7&version=KJV",
+      },
+      {
+        reference: "Acts 22:9; 26:14",
+        text: "And they that were with me saw indeed the light, and were afraid; but they heard not the voice of him that spake to me... And when we were all fallen to the earth, I heard a voice speaking unto me...",
+        translation: "King James Version",
+        sourceUrl:
+          "https://www.biblegateway.com/passage/?search=Acts+22%3A9%3B+26%3A14&version=KJV",
+      },
+    ],
+    note: "Some harmonists propose the Greek verb for 'hear' (akouo) can mean 'understand' as well as physically perceive sound, so the companions might have heard an indistinct sound without understanding words — reconciling 9:7 and 22:9. The standing/falling difference (9:7 vs. 26:14) is harder to resolve the same way, and is more often read as the kind of incidental variation expected when the same author narrates an oral account of an experience multiple times, in different rhetorical settings (a narrated history versus two of Paul's own first-person speeches), rather than a claim that every retelling must match in every physical detail.",
   },
 
   // ---------------------------------------------------------------- JUDAISM
@@ -782,9 +1432,32 @@ export const contradictions: Contradiction[] = [
     note: "Midrashic sources (e.g. Genesis Rabbah) address this directly with the concept of an 'or ha-ganuz' — a primordial light created on day one, distinct from and hidden away before the sun's light on day four — treating the sequence as intentional rather than an oversight needing correction.",
   },
   {
+    id: "judaism-creation-duration",
+    religionId: "judaism",
+    group: "Creation",
+    title: "Six Days, or One?",
+    description:
+      "Genesis 1 narrates creation unfolding across six distinct days, completed and rested upon on the seventh; Genesis 2:4, immediately afterward, refers to the entire process as happening 'in the day' (singular) that God made heaven and earth.",
+    passages: [
+      {
+        reference: "Genesis 1:31-2:2",
+        text: "And there was evening and there was morning, the sixth day. And the heaven and the earth were finished, and all the host of them. And on the seventh day God finished His work which He had made...",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.1.31-2.2",
+      },
+      {
+        reference: "Genesis 2:4",
+        text: "These are the generations of the heaven and of the earth when they were created, in the day that the LORD God made earth and heaven.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.2.4",
+      },
+    ],
+    note: "Most commentators, classical and modern, read Genesis 2:4's 'day' as an idiom for 'at the time when' rather than a literal 24-hour period contradicting the six-day account — the Hebrew word yom ('day') is used this way elsewhere in the Torah (e.g. 'in the day that thou eatest thereof,' Genesis 2:17, doesn't mean Adam would die within 24 hours). This idiomatic use is usually raised in debates about how literally to read Genesis 1's own six 'days,' rather than treated as a separate contradiction in its own right.",
+  },
+  {
     id: "judaism-ark-animals",
     religionId: "judaism",
-    group: "The Flood",
+    group: "The Flood & Babel",
     title: "How Many Animals Boarded the Ark?",
     description:
       "God's initial instruction to Noah calls for two of every kind of animal to be brought onto the ark; a later instruction, describing the same event, calls for seven pairs of every clean animal and bird, with unclean animals alone limited to a single pair.",
@@ -803,6 +1476,52 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "Harmonists read these as complementary rather than contradictory: the general instruction in chapter 6 ('two of every sort') is read as a baseline later refined by chapter 7's more specific instruction distinguishing clean from unclean animals — needed so Noah would have surplus clean animals available for sacrifice after the flood (Genesis 8:20). Source-critical scholars instead read the two counts as coming from different underlying literary sources (again commonly labelled P and J) combined into one narrative.",
+  },
+  {
+    id: "judaism-flood-duration",
+    religionId: "judaism",
+    group: "The Flood & Babel",
+    title: "Forty Days, or a Hundred and Fifty?",
+    description:
+      "One verse describes rain falling on the earth for forty days; other verses describe the floodwaters prevailing over the earth for a hundred and fifty days before beginning to recede.",
+    passages: [
+      {
+        reference: "Genesis 7:17",
+        text: "And the flood was forty days upon the earth; and the waters increased, and bore up the ark, and it was lift up above the earth.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.7.17",
+      },
+      {
+        reference: "Genesis 7:24; 8:3",
+        text: "And the waters prevailed upon the earth a hundred and fifty days... and the waters returned from off the earth continually; and after the end of a hundred and fifty days the waters decreased.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.7.24",
+      },
+    ],
+    note: "Widely read as complementary rather than contradictory: the forty days (matching the forty days of rain in Genesis 7:12) describes the period of active rainfall and the rising of the waters, while the hundred and fifty days describes the longer total period the waters remained at their height before receding — the flood narrative's own detailed chronology (across Genesis 7-8) generally supports reading these as sequential phases of one continuous event rather than two conflicting totals for the same span.",
+  },
+  {
+    id: "judaism-tower-of-babel",
+    religionId: "judaism",
+    group: "The Flood & Babel",
+    title: "One Language, or Many?",
+    description:
+      "Genesis 11 opens the Babel narrative by stating the whole earth shared one language, implying the diversity of languages resulted from that story's events; the genealogical 'Table of Nations' immediately before it, in Genesis 10, already describes the nations as divided 'every one after his tongue' — multiple languages — before Babel is narrated.",
+    passages: [
+      {
+        reference: "Genesis 11:1",
+        text: "And the whole earth was of one language and of one speech.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.11.1",
+      },
+      {
+        reference: "Genesis 10:5",
+        text: "Of these were the isles of the nations divided in their lands, every one after his tongue, after their families, in their nations.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.10.5",
+      },
+    ],
+    note: "A widely proposed resolution reads Genesis 10 and 11 as not strictly chronological relative to each other: Genesis 10 is read as a genealogical table describing the world's nations as they existed by a later point, narrated first for structural reasons, while Genesis 11 then flashes back to explain, thematically rather than strictly sequentially, how that linguistic diversity originally came about. This kind of achronological, topically-organized narration is read by many scholars as a recognized feature of ancient Near Eastern historiography generally, including elsewhere in Genesis.",
   },
   {
     id: "judaism-census-instigator",
@@ -920,6 +1639,52 @@ export const contradictions: Contradiction[] = [
     note: "Widely regarded, including by many traditional and academic commentators alike, as a straightforward scribal transmission error, given how closely the two accounts otherwise agree — right down to the matching 12,000 horsemen. Older harmonizations occasionally proposed the numbers describe different units (e.g. stalls housing several horses each), though this is a minority reading.",
   },
   {
+    id: "judaism-solomon-officers",
+    religionId: "judaism",
+    group: "Kings & Chronicles",
+    title: "How Many Chief Officers Did Solomon Have?",
+    description:
+      "Kings records 550 chief officers overseeing Solomon's labor force; Chronicles, describing the same role, records 250.",
+    passages: [
+      {
+        reference: "I Kings 9:23",
+        text: "These were the chief officers that were over Solomon's work, five hundred and fifty, who bore rule over the people that wrought in the work.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Kings.9.23",
+      },
+      {
+        reference: "II Chronicles 8:10",
+        text: "And these were the chief officers of king Solomon, even two hundred and fifty, that bore rule over the people.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/II_Chronicles.8.10",
+      },
+    ],
+    note: "Commonly treated as another instance of the numeral discrepancies that recur between Kings and Chronicles, likely arising from scribal transmission. Some harmonists note 1 Kings 5:16 separately records 3,300 supervisory officers specifically over the building projects (compare 2 Chronicles 2:18's 3,600), suggesting 9:23 and 8:10 may be counting a different, more senior subset of overseers than those other totals — though this doesn't fully resolve why the figures for that subset still differ.",
+  },
+  {
+    id: "judaism-syrian-chariots",
+    religionId: "judaism",
+    group: "Kings & Chronicles",
+    title: "How Many Aramean Chariot-Fighters Did David Defeat?",
+    description:
+      "Samuel records David defeating 700 Aramean chariot-fighters, alongside 40,000 horsemen; Chronicles, narrating the same battle, records 7,000 men who fought in chariots, alongside 40,000 footmen — differing both in the chariot-related figure (a tenfold difference, the same pattern as several other Samuel/Chronicles numbers) and in whether the accompanying troops were horsemen or footmen.",
+    passages: [
+      {
+        reference: "II Samuel 10:18",
+        text: "And Aram fled before Israel; and David slew of Aram the men of seven hundred chariots, and forty thousand horsemen, and smote Shobach the captain of their host, who died there.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/II_Samuel.10.18",
+      },
+      {
+        reference: "I Chronicles 19:18",
+        text: "And Aram fled before Israel; and David slew of Aram seven thousand men that fought in chariots, and forty thousand footmen, and killed Shobach the captain of the host.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Chronicles.19.18",
+      },
+    ],
+    note: "Fits the same broader pattern as the horse-stalls and census-count discrepancies elsewhere on this page — widely attributed to scribal numeral transmission errors between the two books, which drew on shared or related source material centuries apart. The horsemen/footmen difference is less commonly discussed than the tenfold numeral pattern, but is read the same way by most textual critics.",
+  },
+  {
     id: "judaism-ahaziah-age",
     religionId: "judaism",
     group: "Kings & Chronicles",
@@ -1024,6 +1789,29 @@ export const contradictions: Contradiction[] = [
     note: "The tension is tight enough to appear within a single chapter: 1 Samuel 15:29 denies God can repent in the very story where God is twice said to 'repent' of having made Saul king (verses 11 and 35 of the same chapter). Commentators typically read this 'repenting' language as anthropomorphic accommodation — describing a real change in outcome, contingent on human action, rather than a change in God's essential nature, knowledge, or long-term plan.",
   },
   {
+    id: "judaism-god-angry",
+    religionId: "judaism",
+    group: "God's Nature",
+    title: "Is God Angry, or Unmoved?",
+    description:
+      "Numbers describes God as fundamentally unlike a changeable, emotionally reactive human being; Exodus describes God's wrath 'waxing hot' to the point of wanting to consume the Israelites entirely, needing to be talked out of it by Moses's intercession in the following verses.",
+    passages: [
+      {
+        reference: "Numbers 23:19",
+        text: "God is not a man, that He should lie; neither the son of man, that He should repent.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Numbers.23.19",
+      },
+      {
+        reference: "Exodus 32:10",
+        text: "Now therefore let Me alone, that My wrath may wax hot against them, and that I may consume them; and I will make of thee a great nation.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Exodus.32.10",
+      },
+    ],
+    note: "Commentators generally read the 'wrath' language throughout the Torah as anthropomorphic — describing, in terms humans can understand, God's response to covenant unfaithfulness and its consequences, rather than an uncontrolled emotional outburst comparable to human anger. Numbers 23:19's point in its own context is specifically about the reliability of God's word and promises, not a general claim that God has no responsive reaction to human behavior — Exodus 32:14, just a few verses after 32:10, has God 'relenting' in response to Moses's plea, part of one fluid, responsive relationship rather than two static, opposed descriptions of God's temperament.",
+  },
+  {
     id: "judaism-seeing-god",
     religionId: "judaism",
     group: "God's Nature",
@@ -1051,6 +1839,52 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "Commentators generally distinguish a vision, direct verbal communication, or partial manifestation (permitted, and idiomatically called 'face to face') from seeing God's essence directly (denied) — Jewish tradition has long debated exactly what 'face to face' means in each of these cases, and exactly what Jacob 'saw.'",
+  },
+  {
+    id: "judaism-god-everywhere",
+    religionId: "judaism",
+    group: "God's Nature",
+    title: "Is God Everywhere?",
+    description:
+      "The Psalm affirms there is nowhere a person could go to escape God's presence; Genesis describes God 'walking in the garden,' with Adam and Eve able to hide from His presence among the trees — language implying a localized, moving presence a person could, at least temporarily, avoid.",
+    passages: [
+      {
+        reference: "Psalm 139:7-10",
+        text: "Whither shall I go from Thy spirit? or whither shall I flee from Thy presence? If I ascend up into heaven, Thou art there; if I make my bed in the nether-world, behold, Thou art there... Even there would Thy hand lead me, and Thy right hand would hold me.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Psalms.139.7-10",
+      },
+      {
+        reference: "Genesis 3:8",
+        text: "And they heard the voice of the LORD God walking in the garden toward the cool of the day; and the man and his wife hid themselves from the presence of the LORD God amongst the trees of the garden.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.3.8",
+      },
+    ],
+    note: "Classical commentators read Genesis 3:8 as deliberately anthropomorphic, vivid narrative language — God described as if strolling through a garden in the evening breeze — rather than a literal claim about God's location, similar to other physical descriptions of God throughout the Torah (hands, a face, 'coming down' to see the Tower of Babel, Genesis 11:5). Jewish philosophical tradition, especially from the medieval period onward (e.g. Maimonides), explicitly treats such passages as figurative accommodations to human language, reserving literal omnipresence as the philosophically precise description of God's nature.",
+  },
+  {
+    id: "judaism-human-lifespan",
+    religionId: "judaism",
+    group: "God's Nature",
+    title: "120 Years, or Seventy?",
+    description:
+      "Genesis has God declaring a maximum human lifespan of 120 years; the Psalm instead describes ordinary human lifespan as seventy to eighty years, with no reference to a 120-year figure.",
+    passages: [
+      {
+        reference: "Genesis 6:3",
+        text: "And the LORD said: 'My spirit shall not abide in man for ever, for that he also is flesh; therefore shall his days be a hundred and twenty years.'",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.6.3",
+      },
+      {
+        reference: "Psalm 90:10",
+        text: "The days of our years are threescore years and ten, or even by reason of strength fourscore years...",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Psalms.90.10",
+      },
+    ],
+    note: "Many commentators read Genesis 6:3 not as setting an individual lifespan cap at all, but as announcing a fixed countdown — 120 years — until the flood would arrive, a period of grace for humanity to repent, fitting the immediate narrative context (Genesis 6 goes on to describe the flood). Read this way, there's no real tension with Psalm 90's separate statement about ordinary human life expectancy in the psalmist's own, much later time. A minority of commentators do read Genesis 6:3 as a lifespan cap, and note biblical figures after the flood generally trend toward shorter lifespans over subsequent generations, though several (e.g. Abraham at 175, Genesis 25:7) still exceed 120.",
   },
   {
     id: "judaism-children-punished",
