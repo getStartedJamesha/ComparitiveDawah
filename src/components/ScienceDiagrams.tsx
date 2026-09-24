@@ -422,6 +422,243 @@ function TimeRelativity() {
   );
 }
 
+function HeavenAsSmoke() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g className={dim} stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round">
+        <path d="M 20 62 Q 35 47 25 32 Q 15 17 35 13" />
+        <path d="M 45 72 Q 60 57 50 40 Q 40 24 60 19" />
+        <path d="M 70 62 Q 85 50 75 34 Q 68 20 88 15" />
+      </g>
+      <Arrow x1={108} y1={50} x2={158} y2={50} />
+      <g transform="translate(228, 50)">
+        <circle r="30" className={accent} fill="currentColor" opacity={0.85} />
+        <circle r="30" className={dim} stroke="currentColor" strokeWidth={1.5} fill="none" strokeDasharray="3 3" />
+      </g>
+    </svg>
+  );
+}
+
+function SevenHeavens() {
+  const radii = [14, 20, 26, 32, 38, 44, 50];
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <line x1="10" y1="92" x2="290" y2="92" className={dim} stroke="currentColor" strokeWidth={2} />
+      <g transform="translate(150, 92)">
+        {radii.map((r, i) => (
+          <path
+            key={i}
+            d={`M ${-r} 0 A ${r} ${r} 0 0 1 ${r} 0`}
+            className={i % 2 === 0 ? accent : dim}
+            stroke="currentColor"
+            strokeWidth={2}
+            fill="none"
+          />
+        ))}
+      </g>
+    </svg>
+  );
+}
+
+function SunMoonLight() {
+  const rays = Array.from({ length: 8 }, (_, i) => (i * Math.PI) / 4);
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(55, 50)">
+        {rays.map((a, i) => (
+          <line
+            key={i}
+            x1={Math.cos(a) * 16}
+            y1={Math.sin(a) * 16}
+            x2={Math.cos(a) * 30}
+            y2={Math.sin(a) * 30}
+            className="text-amber-500"
+            stroke="currentColor"
+            strokeWidth={2.5}
+            strokeLinecap="round"
+          />
+        ))}
+        <circle r="16" className="text-amber-500" fill="currentColor" />
+      </g>
+      <g className={dim} stroke="currentColor" strokeWidth={1.5} strokeDasharray="2 4">
+        <line x1="95" y1="50" x2="210" y2="50" />
+      </g>
+      <g transform="translate(235, 50)">
+        <circle r="18" className={muted} fill="currentColor" />
+        <path d="M 0 -18 A 18 18 0 0 0 0 18 Z" className={accent} fill="currentColor" opacity={0.75} />
+      </g>
+    </svg>
+  );
+}
+
+function HearingBeforeSight() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <line x1="20" y1="70" x2="280" y2="70" className={dim} stroke="currentColor" strokeWidth={2} />
+      <g transform="translate(80, 38)" className={accent} stroke="currentColor" strokeWidth={2.5} fill="none" strokeLinecap="round">
+        <path d="M -8 20 Q -20 10 -14 -6 Q -8 -20 6 -18 Q 20 -16 18 0 Q 16 14 4 14 Q -4 14 -4 6" />
+      </g>
+      <circle cx="80" cy="70" r="4" className={accent} fill="currentColor" />
+      <text x="80" y="95" textAnchor="middle" className={`${dim} text-[9px]`} fill="currentColor">
+        hearing
+      </text>
+      <Arrow x1={120} y1={70} x2={190} y2={70} />
+      <g transform="translate(230, 40)" className={muted} stroke="currentColor" strokeWidth={2.5} fill="none" strokeLinecap="round">
+        <path d="M -20 0 Q 0 -16 20 0 Q 0 16 -20 0 Z" />
+        <circle r="6" fill="currentColor" stroke="none" />
+      </g>
+      <circle cx="230" cy="70" r="4" className={muted} fill="currentColor" />
+      <text x="230" y="95" textAnchor="middle" className={`${dim} text-[9px]`} fill="currentColor">
+        sight
+      </text>
+    </svg>
+  );
+}
+
+function EverythingInPairs() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <line x1="150" y1="8" x2="150" y2="92" className={dim} stroke="currentColor" strokeWidth={1.5} strokeDasharray="3 3" />
+      <path d="M 120 25 Q 98 11 94 25 Q 98 39 120 25 Z" className={accent} fill="currentColor" />
+      <path d="M 180 25 Q 202 11 206 25 Q 202 39 180 25 Z" className={accent} fill="currentColor" />
+      <circle cx="115" cy="50" r="10" className={accent} fill="currentColor" opacity={0.8} />
+      <circle cx="185" cy="50" r="10" className={accent} fill="currentColor" opacity={0.8} />
+      <g className={dim} stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round">
+        <path d="M 108 78 L 122 78 M 115 71 L 115 85" />
+        <path d="M 178 78 L 192 78 M 185 71 L 185 85" />
+      </g>
+    </svg>
+  );
+}
+
+function AntCommunication() {
+  const ant = (x: number, y: number) => (
+    <g transform={`translate(${x}, ${y})`} className={accent} fill="currentColor">
+      <ellipse cx="0" cy="0" rx="5" ry="4" />
+      <ellipse cx="-8" cy="1" rx="4" ry="3.2" />
+      <ellipse cx="8" cy="-1" rx="3.5" ry="3" />
+      <g stroke="currentColor" strokeWidth={1} strokeLinecap="round">
+        <line x1="-2" y1="4" x2="-6" y2="10" />
+        <line x1="0" y1="5" x2="0" y2="11" />
+        <line x1="2" y1="4" x2="6" y2="10" />
+      </g>
+    </g>
+  );
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <path d="M 20 70 Q 90 30 150 60 T 280 40" className={dim} stroke="currentColor" strokeWidth={1.5} fill="none" strokeDasharray="4 4" />
+      {ant(40, 62)}
+      {ant(150, 60)}
+      {ant(255, 44)}
+      <g className="text-amber-500" stroke="currentColor" strokeWidth={1.5} fill="none">
+        <path d="M 160 45 Q 165 38 172 42" />
+        <path d="M 163 50 Q 170 45 178 48" />
+      </g>
+    </svg>
+  );
+}
+
+function SpiderWeb() {
+  const spokes = Array.from({ length: 8 }, (_, i) => (i * Math.PI) / 4);
+  const rings = [14, 26, 38];
+  const brokenIndex = 2;
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(150, 48)">
+        {spokes.map((a, i) =>
+          i === brokenIndex ? null : (
+            <line
+              key={i}
+              x1={0}
+              y1={0}
+              x2={Math.cos(a) * 44}
+              y2={Math.sin(a) * 44}
+              className={dim}
+              stroke="currentColor"
+              strokeWidth={1.3}
+            />
+          ),
+        )}
+        <line
+          x1={0}
+          y1={0}
+          x2={Math.cos(spokes[brokenIndex]) * 22}
+          y2={Math.sin(spokes[brokenIndex]) * 22}
+          className={dim}
+          stroke="currentColor"
+          strokeWidth={1.3}
+        />
+        <path
+          d={`M ${Math.cos(spokes[brokenIndex]) * 22} ${Math.sin(spokes[brokenIndex]) * 22} q 8 10 2 20`}
+          className="text-amber-500"
+          stroke="currentColor"
+          strokeWidth={1.5}
+          fill="none"
+          strokeLinecap="round"
+        />
+        {rings.map((r, i) => (
+          <circle key={i} cx={0} cy={0} r={r} className={dim} stroke="currentColor" strokeWidth={1.3} fill="none" />
+        ))}
+      </g>
+    </svg>
+  );
+}
+
+function ChestTightness() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <path d="M 20 90 L 280 15" className={dim} stroke="currentColor" strokeWidth={2} strokeDasharray="4 3" fill="none" />
+      <ellipse cx="55" cy="75" rx="20" ry="14" className={accent} fill="currentColor" opacity={0.85} />
+      <ellipse cx="150" cy="50" rx="14" ry="12" className={accent} fill="currentColor" opacity={0.6} />
+      <ellipse cx="245" cy="25" rx="8" ry="9" className={accent} fill="currentColor" opacity={0.4} />
+    </svg>
+  );
+}
+
+function ForeheadRegion() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(150, 50)">
+        <path
+          d="M -35 20 Q -42 -10 -20 -28 Q 5 -42 28 -25 Q 42 -12 38 10 Q 35 26 20 30 L 20 42 L 8 42 L 8 32 Q -10 34 -22 26 Q -32 22 -35 20 Z"
+          className={muted}
+          fill="currentColor"
+        />
+        <path
+          d="M -20 -28 Q 5 -42 28 -25 Q 32 -16 30 -6 Q 5 -14 -18 -8 Q -24 -18 -20 -28 Z"
+          className={accent}
+          fill="currentColor"
+          opacity={0.85}
+        />
+      </g>
+    </svg>
+  );
+}
+
+function AnimalCommunities() {
+  return (
+    <svg viewBox="0 0 300 100" className="w-full">
+      <g transform="translate(60, 50)">
+        <circle cx="-14" cy="-6" r="7" className={accent} fill="currentColor" />
+        <circle cx="0" cy="8" r="7" className={accent} fill="currentColor" />
+        <circle cx="14" cy="-8" r="7" className={accent} fill="currentColor" />
+        <ellipse cx="0" cy="0" rx="34" ry="26" className={dim} stroke="currentColor" strokeWidth={1.3} fill="none" strokeDasharray="3 3" />
+      </g>
+      <g transform="translate(150, 50)">
+        <path d="M -14 6 L 0 -8 L 14 6 Z" className={accent} fill="currentColor" />
+        <path d="M -14 -6 L 0 8 L 14 -6 Z" className={accent} fill="currentColor" opacity={0.7} />
+        <ellipse cx="0" cy="0" rx="34" ry="26" className={dim} stroke="currentColor" strokeWidth={1.3} fill="none" strokeDasharray="3 3" />
+      </g>
+      <g transform="translate(240, 50)">
+        <ellipse cx="-8" cy="4" rx="8" ry="5" className={accent} fill="currentColor" />
+        <ellipse cx="8" cy="-4" rx="8" ry="5" className={accent} fill="currentColor" />
+        <ellipse cx="0" cy="8" rx="8" ry="5" className={accent} fill="currentColor" />
+        <ellipse cx="0" cy="0" rx="34" ry="26" className={dim} stroke="currentColor" strokeWidth={1.3} fill="none" strokeDasharray="3 3" />
+      </g>
+    </svg>
+  );
+}
+
 const diagrams: Record<string, () => ReactElement> = {
   embryology: Embryology,
   "cosmic-expansion": CosmicExpansion,
@@ -443,6 +680,16 @@ const diagrams: Record<string, () => ReactElement> = {
   "bee-behavior": BeeBehavior,
   "pain-receptors-skin": PainReceptors,
   "time-relativity": TimeRelativity,
+  "heaven-as-smoke": HeavenAsSmoke,
+  "seven-heavens-atmosphere": SevenHeavens,
+  "sun-light-moon-reflection": SunMoonLight,
+  "hearing-before-sight": HearingBeforeSight,
+  "everything-in-pairs": EverythingInPairs,
+  "ant-communication": AntCommunication,
+  "spider-web-fragility": SpiderWeb,
+  "chest-tightness-altitude": ChestTightness,
+  "forehead-lying-sinning": ForeheadRegion,
+  "animal-communities": AnimalCommunities,
 };
 
 const diagramCaptions: Record<string, string> = {
@@ -466,6 +713,16 @@ const diagramCaptions: Record<string, string> = {
   "bee-behavior": "structured cells built in a repeating hexagonal pattern",
   "pain-receptors-skin": "sensation points concentrated near the surface",
   "time-relativity": "one unit of time on one scale, many on another",
+  "heaven-as-smoke": "a formless vapor, then an ordered whole",
+  "seven-heavens-atmosphere": "layers stacked one above another",
+  "sun-light-moon-reflection": "a source of its own light, and one lit from outside",
+  "hearing-before-sight": "one faculty active before the other",
+  "everything-in-pairs": "matching forms on either side of a divide",
+  "ant-communication": "a trail, with a signal passed along it",
+  "spider-web-fragility": "an ordered structure — with one strand broken loose",
+  "chest-tightness-altitude": "narrowing as the path climbs higher",
+  "forehead-lying-sinning": "one region of the head, set apart",
+  "animal-communities": "separate groups, each its own community",
 };
 
 export function ScienceDiagram({ id }: { id: string }) {
