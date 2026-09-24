@@ -85,6 +85,30 @@ export const scienceTopics: ScienceTopic[] = [
     context:
       "Classical commentators (e.g. al-Qurtubi, Ibn Kathir) offer older readings of the 'three darknesses' that don't match this specific membrane anatomy — variously the belly, the womb, and the placenta, or simply darkness intensified across three general stages of pregnancy. The phrase also fits a broader Quranic pattern of describing hidden processes (including a person's own conception) as happening 'in darkness,' a poetic emphasis on concealment rather than a claim about distinct anatomical layers.",
   },
+  {
+    id: "hearing-before-sight",
+    title: "Hearing Named Before Sight",
+    field: "Developmental Biology",
+    category: "embryology",
+    passages: [
+      {
+        reference: "Qur'an 16:78",
+        text: "And Allah has extracted you from the wombs of your mothers not knowing a thing, and He made for you hearing and vision and hearts [i.e. intellect] that perhaps you would be grateful.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/16/78",
+      },
+      {
+        reference: "Qur'an 32:9",
+        text: "Then He proportioned him and breathed into him from His [created] soul and made for you hearing and vision and hearts; little are you grateful.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/32/9",
+      },
+    ],
+    claim:
+      "Cited for listing hearing before sight in both verses, read as matching the fact that the auditory system becomes functional in the womb well before the visual system, which stays essentially unused (eyes closed, no light) until after birth.",
+    context:
+      "Hearing genuinely does develop before vision in utero, which is accurate. But both verses describe a person's faculties in a fixed, common rhetorical order — hearing, sight, then heart/intellect — that recurs across the Qur'an in other passages naming human faculties generally (e.g. 23:78, 67:23), not only ones about fetal development. Classical commentators read the ordering as idiomatic phrasing rather than a developmental timeline being asserted.",
+  },
 
   // ---------------------------------------------------------- ASTRONOMY & COSMOLOGY
   {
@@ -170,6 +194,78 @@ export const scienceTopics: ScienceTopic[] = [
       "The qualifier 'that you see' is read by some as implying pillars do exist, just invisible ones — taken as a hint at gravitational forces holding celestial bodies in place without physical structure.",
     context:
       "Classical commentators generally read 'without pillars' more simply: the sky visibly has no supporting structure at all, full stop, offered as a sign of God's power holding it up directly. The 'that you see' qualifier is grammatically ambiguous in Arabic and is also commonly read as simply intensifying 'without pillars' (i.e. 'without pillars — as you can plainly see'), not as implying a class of unseen pillars later identified as gravity.",
+  },
+  {
+    id: "heaven-as-smoke",
+    title: "The Heaven as \"Smoke\"",
+    field: "Cosmology",
+    category: "astronomy",
+    passages: [
+      {
+        reference: "Qur'an 41:11",
+        text: "Then He directed Himself to the heaven while it was smoke and said to it and to the earth, 'Come [into being], willingly or by compulsion.' They said, 'We have come willingly.'",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/41/11",
+      },
+    ],
+    claim:
+      "Cited as matching the early universe's hot, dense, gaseous state before stars and galaxies formed — cosmology describes the universe before roughly 380,000 years after the Big Bang as an opaque, smoke-like plasma.",
+    context:
+      "Classical commentators (e.g. al-Tabari, Ibn Kathir) read 'dukhan' (smoke/vapor) here as describing a formless, vapor-like mass God shaped into the ordered heavens — consistent with how vapor or mist would have been understood at the time, not a claim about a specific photon-scattering plasma state. The same word is used elsewhere in the Qur'an (44:10) for a literal future sign of judgment, showing it's a general term for smoke or vapor rather than a technical cosmological one.",
+  },
+  {
+    id: "seven-heavens-atmosphere",
+    title: "Seven Heavens in Layers",
+    field: "Atmospheric Science",
+    category: "astronomy",
+    passages: [
+      {
+        reference: "Qur'an 67:3-4",
+        text: "[He] who created seven heavens in layers. You do not see in the creation of the Most Merciful any inconsistency. So return [your] vision [to the sky]; do you see any breaks?",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/67/3-4",
+      },
+      {
+        reference: "Qur'an 65:12",
+        text: "It is Allah who has created seven heavens and of the earth, the like of them. [His] command descends among them so you may know that Allah is over all things competent...",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/65/12",
+      },
+      {
+        reference: "Qur'an 71:15-16",
+        text: "Do you not consider how Allah has created seven heavens in layers and made the moon therein a light and made the sun a lamp?",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/71/15-16",
+      },
+    ],
+    claim:
+      "Popularly connected to Earth's atmosphere having multiple distinct layers, sometimes matched specifically to seven: troposphere, stratosphere, ozone layer, mesosphere, ionosphere, thermosphere, and exosphere.",
+    context:
+      "Classical commentators uniformly read 'seven heavens' (sab' samawat) as seven distinct celestial realms stacked above the earth — the standard cosmological structure of the era — not the modern concept of the atmosphere specifically. Atmospheric science also has no single standard count of seven layers: most textbooks name four or five primary layers (troposphere, stratosphere, mesosphere, thermosphere, exosphere), and reaching seven usually means adding boundary zones like the ozone layer or ionosphere that aren't distinct atmospheric layers in the same sense — making the 'seven' match look more like a retrofit than a precise scientific count.",
+  },
+  {
+    id: "sun-light-moon-reflection",
+    title: "The Sun's Own Light, the Moon's Borrowed Light",
+    field: "Astronomy",
+    category: "astronomy",
+    passages: [
+      {
+        reference: "Qur'an 10:5",
+        text: "It is He who made the sun a shining light and the moon a derived light and determined for it phases - that you may know the number of years and account [of time].",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/10/5",
+      },
+      {
+        reference: "Qur'an 25:61",
+        text: "Blessed is He who has placed in the sky great stars and placed therein a [burning] lamp and an illuminating moon.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/25/61",
+      },
+    ],
+    claim:
+      "Cited as distinguishing the sun's self-generated light ('shining light'/'lamp') from the moon's reflected light ('derived'/'illuminating' light) — matching the fact that the moon has no light source of its own and only reflects sunlight.",
+    context:
+      "The distinction in the Arabic wording is real, but 'nur' (the root behind 'derived'/'illuminating') is a broad word for light or radiance used elsewhere in the Qur'an for other things entirely, such as scripture itself (5:44), not a technical term restricted to reflected as opposed to emitted light. Naked-eye observation that the moon looks different from the sun, changes shape monthly, and is dimmer was also well established before Islam — Greek astronomers had already reasoned that moonlight was reflected sunlight centuries earlier. Classical commentators read the sun/moon distinction mainly as poetic variation and a practical marker for timekeeping, not a physics claim about light sources.",
   },
 
   // -------------------------------------------------------------------- EARTH SCIENCES
@@ -313,11 +409,17 @@ export const scienceTopics: ScienceTopic[] = [
         translation: "Sahih International",
         sourceUrl: "https://quran.com/25/48-49",
       },
+      {
+        reference: "Qur'an 7:57",
+        text: "And it is He who sends the winds as good tidings before His mercy, until, when they have carried heavy rainclouds, We drive them to a dead land and send down rain therein and bring forth thereby [some] of all the fruits...",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/7/57",
+      },
     ],
     claim:
-      "Cited as describing the hydrological cycle: cloud formation, rainfall replenishing springs and rivers, and sustaining plant growth.",
+      "Cited as describing the hydrological cycle: cloud formation, rainfall replenishing springs and rivers, and sustaining plant growth — with 7:57 specifically sequencing wind before rain, matching how moisture-carrying winds precede a storm.",
     context:
-      "This is among the less contested examples, since the basic observation — clouds gathering, rain falling, feeding springs and rivers and crops — was already available to ancient agricultural societies and appears in earlier texts too (e.g. Ecclesiastes 1:7). What's debated is less the observation itself than whether it amounts to a scientific prediction beyond common experience of the time.",
+      "This is among the less contested examples, since the basic observation — clouds gathering, rain falling, feeding springs and rivers and crops — was already available to ancient agricultural societies and appears in earlier texts too (e.g. Ecclesiastes 1:7). Winds visibly picking up before rain arrives is likewise an everyday observation, not one requiring modern meteorology to notice. What's debated is less the observation itself than whether it amounts to a scientific prediction beyond common experience of the time.",
   },
 
   // ------------------------------------------------------------------------- BIOLOGY
@@ -350,6 +452,12 @@ export const scienceTopics: ScienceTopic[] = [
         text: "And indeed, for you in grazing livestock is a lesson. We give you drink from what is in their bellies - between excretion and blood - pure milk, palatable to drinkers.",
         translation: "Sahih International",
         sourceUrl: "https://quran.com/16/66",
+      },
+      {
+        reference: "Qur'an 23:21",
+        text: "And indeed, for you in livestock is a lesson. We give you drink from what is in their bellies, and for you in them are numerous benefits, and from them you eat.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/23/21",
       },
     ],
     claim:
@@ -392,6 +500,120 @@ export const scienceTopics: ScienceTopic[] = [
       "Cited as showing awareness that pain is sensed via receptors concentrated in the skin — implying new skin is given so the punishment keeps being felt.",
     context:
       "This verse describes eschatological punishment in the afterlife, not a physiology lesson — its point is that the punishment is unending and renewed, a motif that appears elsewhere in warnings about Hell (compare the undying-worm imagery in Mark 9:48). Classical commentators read the 'renewed skin' as emphasizing the endlessness and intensity of the punishment, not as an anatomical statement about the location of pain receptors, which was not established until much later study of the nervous system.",
+  },
+  {
+    id: "everything-in-pairs",
+    title: "Everything Created in Pairs",
+    field: "Biology",
+    category: "biology",
+    passages: [
+      {
+        reference: "Qur'an 36:36",
+        text: "Exalted is He who created all pairs - from what the earth grows and from themselves and from that which they do not know.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/36/36",
+      },
+      {
+        reference: "Qur'an 13:3",
+        text: "...and from all the fruits He made therein two mates [i.e. pairs]; He causes the night to cover the day. Indeed in that are signs for a people who give thought.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/13/3",
+      },
+    ],
+    claim:
+      "Popularly extended beyond male/female biological pairing to claim anticipation of pairing found throughout nature and even physics — from plant reproduction to, in some modern apologetics, particle-antiparticle symmetry.",
+    context:
+      "Qur'anic 'zawj' ('pair/mate') covers a wide range of pairing — spouses, animal pairs, plant pairs — and 36:36 explicitly extends to 'that which they do not know,' which apologists read as leaving room for still-undiscovered forms of pairing. Classical commentators read this mainly as affirming the breadth of God's creative variety (opposites and complements everywhere in creation), not a specific claim about matter-antimatter symmetry, a 20th-century physics concept with a different underlying mechanism than biological or botanical pairing.",
+  },
+  {
+    id: "ant-communication",
+    title: "The Ant's Warning",
+    field: "Entomology",
+    category: "biology",
+    passages: [
+      {
+        reference: "Qur'an 27:18-19",
+        text: "Until, when they came upon the valley of the ants, an ant said, 'O ants, enter your dwellings that you not be crushed by Solomon and his soldiers while they perceive not.' So [Solomon] smiled, amused at her speech...",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/27/18-19",
+      },
+    ],
+    claim:
+      "Cited for recognizing that ants live in organized colonies and communicate with one another — matching modern entomology's documentation of ant colonies as complex, cooperative societies that communicate via pheromones and other signals.",
+    context:
+      "This is part of a narrative about Solomon's miraculous ability to understand animal speech, not a general zoological claim — the passage attributes actual reasoned language to a single ant, which goes well beyond what any modern account of ant communication (chemical signaling, not language) would describe. Ants living in organized colonies was also visible to any careful pre-modern observer long before entomology existed as a field; what's distinctive here is the narrative device of a speaking ant, not an observation about colony behavior.",
+  },
+  {
+    id: "spider-web-fragility",
+    title: "The Weakest of Houses",
+    field: "Materials Science",
+    category: "biology",
+    passages: [
+      {
+        reference: "Qur'an 29:41",
+        text: "The example of those who take allies other than Allah is like that of the spider who takes a home. And indeed, the weakest of homes is the home of the spider, if they only knew.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/29/41",
+      },
+    ],
+    claim:
+      "Sometimes brought into modern apologetics alongside findings about spider silk's real tensile strength (comparable to steel by weight), read as the verse being about the flimsiness of the web's structure as a shelter, not the strength of the silk fiber itself.",
+    context:
+      "The verse's own stated point is explicitly about weakness — comparing reliance on false protectors to the flimsiness of a spider's web as a home — and classical commentators read it exactly that way, as a metaphor with no connection to material science. Modern materials science's finding that spider silk fiber is remarkably tensile-strong is, if anything, more often raised by critics as creating tension with a literal reading of 'the weakest of homes' than as evidence for the verse; the usual apologetic response is the distinction given above, between the structure's usefulness as shelter and the strength of the thread it's woven from.",
+  },
+  {
+    id: "chest-tightness-altitude",
+    title: "A Chest Constricted, as Though Climbing the Sky",
+    field: "Physiology",
+    category: "biology",
+    passages: [
+      {
+        reference: "Qur'an 6:125",
+        text: "So whoever Allah wants to guide - He expands his breast to [contain] Islam; and whoever He wants to send astray - He makes his breast tight and constricted as though he were climbing into the sky. Thus does Allah place defilement upon those who do not believe.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/6/125",
+      },
+    ],
+    claim:
+      "Cited as an early, accurate description of the physiological effect of high-altitude ascent — decreasing atmospheric pressure and oxygen availability causing breathing difficulty and chest tightness (hypoxia), a real phenomenon at increasing altitude.",
+    context:
+      "The verse presents this as a simile for a closed-off, resistant heart, not a scientific description in its own right — the comparison works simply because people of the era already knew climbing gets harder to breathe the higher one goes, a common experience that doesn't require knowing why (atmospheric pressure or oxygen partial pressure specifically). Classical commentators read it exactly this way: a vivid, relatable image of difficulty and constriction, not a statement about the physics of altitude.",
+  },
+  {
+    id: "forehead-lying-sinning",
+    title: "The Lying, Sinning Forelock",
+    field: "Neuroscience",
+    category: "biology",
+    passages: [
+      {
+        reference: "Qur'an 96:15-16",
+        text: "No! If he does not desist, We will surely drag him by the forelock - A lying, sinning forelock.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/96/15-16",
+      },
+    ],
+    claim:
+      "Cited as anticipating neuroscience's identification of the prefrontal cortex — the brain region behind the forehead — with planning, decision-making, and, some argue, deception and moral judgment, since the verse links the forehead/frontal region specifically to lying and sin.",
+    context:
+      "'Nasiyah' refers to the front hairline/forelock as a body part, a common target of physical humiliation in the culture of the time (seizing someone by the forelock), and classical commentators read 'lying, sinning forelock' as a figure of speech — naming the person via the part of them being seized, much as English might say 'grab him by the scruff' — not a claim locating the seat of dishonesty in a specific brain region. Neuroscience's association of the prefrontal cortex with executive function and deception is also broad and still actively studied, not a simple, settled 'lying center' of the brain.",
+  },
+  {
+    id: "animal-communities",
+    title: "Animal Communities",
+    field: "Ethology",
+    category: "biology",
+    passages: [
+      {
+        reference: "Qur'an 6:38",
+        text: "And there is no creature on [or within] the earth or bird that flies with its wings except [that they are] communities like you. We have not neglected in the Register a thing. Then unto their Lord they will be gathered.",
+        translation: "Sahih International",
+        sourceUrl: "https://quran.com/6/38",
+      },
+    ],
+    claim:
+      "Cited as an early acknowledgment that animal species form organized communities or societies — anticipating modern ethology's documentation of complex social structures across many animal species, not just humans.",
+    context:
+      "'Umam' (communities/nations) here is most directly read by classical commentators as describing animals being like humanity in being created, sustained, and ultimately gathered by God — the verse's stated point, reinforced by the following clause about the Register and being 'gathered' — rather than a claim about social organization or behavioral complexity specifically. Many animal species obviously live in groups (herds, flocks, hives), a fact available to everyday observation without specialized modern study, even if the depth of social complexity ethology has since documented (in ants, bees, primates, cetaceans, etc.) is more recent.",
   },
 
   // -------------------------------------------------------------- METALLURGY & MATERIALS
