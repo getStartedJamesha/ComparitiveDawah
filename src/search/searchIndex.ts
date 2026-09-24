@@ -4,6 +4,10 @@ import { verses } from "../data/verses";
 import { contradictions } from "../data/contradictions";
 import { scienceTopics } from "../data/science";
 import { prophecies } from "../data/prophecies";
+import {
+  CATEGORY_LABELS,
+  muhammadProphecies,
+} from "../data/muhammadProphecies";
 
 export type SearchResultType =
   | "Concept"
@@ -11,7 +15,8 @@ export type SearchResultType =
   | "Verse"
   | "Contradiction"
   | "Science"
-  | "Prophecy";
+  | "Prophecy"
+  | "Muhammad's Prophecy";
 
 export interface SearchItem {
   id: string;
@@ -137,6 +142,27 @@ function buildIndex(): SearchItem[] {
         item.context,
         religion?.name ?? "",
         item.passage ? `${item.passage.reference} ${item.passage.text}` : "",
+      ]
+        .join(" ")
+        .toLowerCase(),
+    });
+  }
+
+  for (const item of muhammadProphecies) {
+    items.push({
+      id: `muhammad-prophecy-${item.id}`,
+      type: "Muhammad's Prophecy",
+      title: item.title,
+      subtitle: truncate(item.claim, 110),
+      url: `/muhammad-prophecies#${item.id}`,
+      searchText: [
+        item.title,
+        item.claim,
+        item.context,
+        CATEGORY_LABELS[item.category],
+        item.source.reference,
+        item.source.text,
+        item.source.grade ?? "",
       ]
         .join(" ")
         .toLowerCase(),

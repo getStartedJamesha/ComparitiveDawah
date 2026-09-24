@@ -7,7 +7,8 @@ const navItems = [
   { to: "/religions", label: "Traditions" },
   { to: "/contradictions", label: "Contradictions" },
   { to: "/science", label: "Science" },
-  { to: "/prophecies", label: "Prophecies" },
+  { to: "/prophecies", label: "Foretold" },
+  { to: "/muhammad-prophecies", label: "His Prophecies" },
   { to: "/sources", label: "Sources" },
 ];
 
