@@ -8,6 +8,7 @@ import ReligionDetail from "./pages/ReligionDetail";
 import Contradictions from "./pages/Contradictions";
 import Science from "./pages/Science";
 import Prophecies from "./pages/Prophecies";
+import MuhammadProphecies from "./pages/MuhammadProphecies";
 import Search from "./pages/Search";
 import Sources from "./pages/Sources";
 
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="contradictions" element={<Contradictions />} />
           <Route path="science" element={<Science />} />
           <Route path="prophecies" element={<Prophecies />} />
+          <Route path="muhammad-prophecies" element={<MuhammadProphecies />} />
           <Route path="search" element={<Search />} />
           <Route path="sources" element={<Sources />} />
         </Route>

@@ -87,3 +87,32 @@ export interface Prophecy {
   claim: string;
   context: string;
 }
+
+/**
+ * lifetime = said to have been fulfilled while Muhammad ﷺ was alive;
+ * after-death = fulfilled in the decades/centuries after his death;
+ * long-range = broad, open-ended claims (e.g. Islam's geographic spread);
+ * unfulfilled = events mainstream Islamic eschatology still awaits.
+ */
+export type MuhammadProphecyCategory =
+  | "lifetime"
+  | "after-death"
+  | "long-range"
+  | "unfulfilled";
+
+export interface HadithSource {
+  reference: string;
+  text: string;
+  /** Omitted for Qur'anic citations, which aren't hadith-graded. */
+  grade?: string;
+  sourceUrl: string;
+}
+
+export interface MuhammadProphecy {
+  id: string;
+  category: MuhammadProphecyCategory;
+  title: string;
+  source: HadithSource;
+  claim: string;
+  context: string;
+}

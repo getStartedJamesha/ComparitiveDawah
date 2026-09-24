@@ -129,7 +129,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-14 sm:px-6">
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8">
             <h2 className="font-serif text-2xl font-semibold">
               Science in the Qur'an
@@ -149,7 +149,7 @@ export default function Home() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8">
             <h2 className="font-serif text-2xl font-semibold">
-              Prophecies of Muhammad ﷺ
+              Foretold in Other Scriptures
             </h2>
             <p className="mt-2 text-slate-600 dark:text-slate-300">
               Passages from the Tanakh, the New Testament, and Hindu
@@ -158,6 +158,24 @@ export default function Home() {
             </p>
             <Link
               to="/prophecies"
+              className="mt-4 inline-block rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              Explore the claims →
+            </Link>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8">
+            <h2 className="font-serif text-2xl font-semibold">
+              Prophecies of Muhammad ﷺ
+            </h2>
+            <p className="mt-2 text-slate-600 dark:text-slate-300">
+              Predictions Muhammad ﷺ himself is reported to have made, from
+              the Qur'an and hadith — grouped by whether they were said to be
+              fulfilled in his lifetime, after his death, or are still
+              awaited.
+            </p>
+            <Link
+              to="/muhammad-prophecies"
               className="mt-4 inline-block rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
             >
               Explore the claims →
