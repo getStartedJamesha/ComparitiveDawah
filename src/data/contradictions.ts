@@ -2171,6 +2171,29 @@ export const contradictions: Contradiction[] = [
 
   // --------------------------------------------------------------- HINDUISM
   {
+    id: "hinduism-creation-accounts",
+    religionId: "hinduism",
+    group: "Creation",
+    title: "How Did Creation Begin?",
+    description:
+      "Within the same book of the Rig Veda, one of its most famous hymns describes creation unfolding from a primordial cosmic being sacrificed and divided into the world's parts, while another — the Nasadiya Sukta, a few hymns later — opens by denying that even existence or non-existence could be said of the very beginning, and closes by openly doubting whether anyone, even the gods, actually knows how creation happened.",
+    passages: [
+      {
+        reference: "Rig Veda 10.90.1-2",
+        text: "A thousand heads hath Purusha, a thousand eyes, a thousand feet. On every side pervading earth he fills a space ten fingers wide... When gods prepared the sacrifice with Purusha as their offering...",
+        translation: "Ralph T. H. Griffith translation",
+        sourceUrl: "https://www.sacred-texts.com/hin/rigveda/index.htm",
+      },
+      {
+        reference: "Rig Veda 10.129.1, 7",
+        text: "Then was not non-existent nor existent: there was no realm of air, no sky beyond it... Who verily knows and who can here declare it, whence it was born and whence comes this creation? The Gods are later than this world's production. Who knows then whence it first came into being?",
+        translation: "Ralph T. H. Griffith translation",
+        sourceUrl: "https://www.sacred-texts.com/hin/rigveda/index.htm",
+      },
+    ],
+    note: "This tension is well recognized within Hindu tradition itself rather than a modern discovery — the Nasadiya Sukta is celebrated precisely for its openness about cosmic mystery, often read as operating on a different, more contemplative register than the Purusha Sukta's ritual cosmology rather than competing with it for a literal, factual answer. Later Upanishads add further accounts of their own — the Chandogya Upanishad's 'Being (Sat) alone, one only, without a second' (6.2.1), and the Brihadaranyaka Upanishad's primordial Self (1.4) — which most traditional commentators read as compatible restatements at a more philosophical level, rather than as a fourth competing story of what physically happened.",
+  },
+  {
     id: "hinduism-one-or-many",
     religionId: "hinduism",
     group: "Philosophy",
@@ -2194,6 +2217,29 @@ export const contradictions: Contradiction[] = [
     note: "Max Müller coined the term 'henotheism' specifically for this Rig Vedic pattern — worshipping one god at a time as supreme without denying others. Vedantic schools later resolved the tension by treating the many gods as aspects or manifestations of one ultimate reality (Brahman).",
   },
   {
+    id: "hinduism-worship-other-deities",
+    religionId: "hinduism",
+    group: "Philosophy",
+    title: "Does Worshipping Other Gods Still Reach Krishna?",
+    description:
+      "The Bhagavad Gita has Krishna describe those who worship other deities as being of 'small intelligence,' gaining only limited and temporary results — yet a few chapters later, he says that devotion offered to other gods actually reaches him too, even if not through the proper channel.",
+    passages: [
+      {
+        reference: "Bhagavad Gita 7.23",
+        text: "Men of small intelligence worship the demigods, and their fruits are limited and temporary. Those who worship the demigods go to the planets of the demigods, but My devotees ultimately reach My supreme planet.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/7/verse/23",
+      },
+      {
+        reference: "Bhagavad Gita 9.23",
+        text: "Those who are devotees of other gods and who worship them with faith actually worship only Me, O son of Kunti, but they do so in a wrong way.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/9/verse/23",
+      },
+    ],
+    note: "Traditional Vaishnava commentary reads these as consistent rather than opposed: 9.23 affirms that all worship, however directed, ultimately reaches the one supreme reality Krishna identifies with, while 7.23 separately addresses the outcome for the worshipper — devotion aimed at a lesser goal ('in a wrong way,' avidhi-pūrvakam) yields a lesser, temporary result even though the underlying devotion is, in some sense, received by the same ultimate source. The two verses are usually read together as distinguishing sincerity of devotion from correctness of its object, not as disagreeing about whether other gods are real.",
+  },
+  {
     id: "hinduism-personal-or-formless",
     religionId: "hinduism",
     group: "Philosophy",
@@ -2213,8 +2259,14 @@ export const contradictions: Contradiction[] = [
         translation: "A. C. Bhaktivedanta Swami Prabhupada",
         sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/9/verse/11",
       },
+      {
+        reference: "Bhagavad Gita 12.5",
+        text: "For those whose minds are attached to the unmanifested, impersonal feature of the Supreme, advancement is very troublesome. To make progress in that discipline is always difficult for those who are embodied.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/12/verse/5",
+      },
     ],
-    note: "This is a long-running internal debate, not a modern criticism: Advaita ('non-dualist') philosophy leans toward the formless, impersonal reading; Vaishnava and other bhakti (devotional) schools hold that the Supreme is ultimately personal, with the impersonal Brahman as one partial aspect of Krishna.",
+    note: "This is a long-running internal debate, not a modern criticism: Advaita ('non-dualist') philosophy leans toward the formless, impersonal reading; Vaishnava and other bhakti (devotional) schools hold that the Supreme is ultimately personal, with the impersonal Brahman as one partial aspect of Krishna. Notably, the Gita itself doesn't pretend the two paths are equally easy — 12.5 has Krishna directly acknowledge that the impersonal path is the harder one for an embodied soul, part of why devotional schools read the whole chapter as recommending personal devotion as the more practical route to the same ultimate reality, not a rejection of the formless teaching found elsewhere.",
   },
   {
     id: "hinduism-soul-identity",
@@ -2236,8 +2288,14 @@ export const contradictions: Contradiction[] = [
         translation: "A. C. Bhaktivedanta Swami Prabhupada",
         sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/15/verse/7",
       },
+      {
+        reference: "Bhagavad Gita 2.12",
+        text: "Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/2/verse/12",
+      },
     ],
-    note: "This is the central fault line between Hinduism's major philosophical schools: Advaita ('non-dual') Vedanta reads Tat Tvam Asi as identity between self and Brahman, while Dvaita ('dualist') and Vishishtadvaita schools read the Gita's language as eternal distinction between the soul and God, even in liberation.",
+    note: "This is the central fault line between Hinduism's major philosophical schools: Advaita ('non-dual') Vedanta reads Tat Tvam Asi as identity between self and Brahman, while Dvaita ('dualist') and Vishishtadvaita schools read the Gita's language — 15.7's 'fragmental parts' and 2.12's explicit listing of Krishna and the individual souls as separately-existing 'I' and 'you' — as eternal distinction between the soul and God, even in liberation. Advaita commentators read 'fragment' and the Gita's personal grammar as accommodating, provisional language addressed to a still-unenlightened Arjuna, not the final metaphysical truth the Upanishads state directly.",
   },
   {
     id: "hinduism-caste-origin",
@@ -2261,6 +2319,121 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "Traditional commentary distinguishes the origin of caste as a functional division of labor and aptitude (4:13) from spiritual equality of all souls before God (5:18); modern reformers within Hinduism (e.g. Gandhi, Vivekananda) have leaned heavily on the latter to challenge hereditary caste practice.",
+  },
+  {
+    id: "hinduism-caste-origin-mechanism",
+    religionId: "hinduism",
+    group: "Philosophy",
+    title: "How Did the Castes Originate?",
+    description:
+      "The Rig Veda's own account of the four castes describes them as arising from different parts of a primordial cosmic being's body at the time of creation; the Bhagavad Gita, describing the same four-fold division, instead grounds it in an individual's qualities (guna) and actions (karma) rather than birth from a body part.",
+    passages: [
+      {
+        reference: "Rig Veda 10.90.11-12",
+        text: "When they divided Purusha how many portions did they make? What do they call his mouth, his arms? What do they call his thighs and feet? The Brahman was his mouth, of both his arms was the Rajanya made. His thighs became the Vaisya, from his feet the Sudra was produced.",
+        translation: "Ralph T. H. Griffith translation",
+        sourceUrl: "https://www.sacred-texts.com/hin/rigveda/index.htm",
+      },
+      {
+        reference: "Bhagavad Gita 4.13",
+        text: "According to the three modes of material nature and the work associated with them, the four divisions of human society are created by Me.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/4/verse/13",
+      },
+    ],
+    note: "Later tradition generally reads the Purusha Sukta's body-part imagery as symbolic of each class's function within the social body (the mouth speaks and teaches, the arms defend, and so on) rather than as a literal or separate creation story competing with the Gita's account. The Manusmriti (1:31) gives a related but distinct account of its own, adding a third layer to how classical Hindu texts explain varna's origin — by birth from Purusha, by quality and action, or by a lawgiver's ordinance — a question different schools and later reform movements have answered very differently.",
+  },
+  {
+    id: "hinduism-sacrifice-or-knowledge",
+    religionId: "hinduism",
+    group: "Philosophy",
+    title: "Does Knowledge Replace Sacrifice?",
+    description:
+      "The Bhagavad Gita has Krishna say that the sacrifice of knowledge is better than any sacrifice of material possessions, in a chapter that goes on to praise knowledge as the great purifier — yet later in the same text, he says sacrifice, charity, and austerity must not be given up.",
+    passages: [
+      {
+        reference: "Bhagavad Gita 4.33",
+        text: "The sacrifice performed in knowledge is better than the mere sacrifice of material possessions, O chastiser of the enemy. O son of Pritha, all sacrifices of work culminate in transcendental knowledge.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/4/verse/33",
+      },
+      {
+        reference: "Bhagavad Gita 18.5",
+        text: "Acts of sacrifice, charity and penance are not to be given up; they must be performed. Indeed, sacrifice, charity and penance purify even the great souls.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/18/verse/5",
+      },
+    ],
+    note: "Traditional commentary reads 4:33 as a statement of relative value (knowledge is the goal that all correctly-performed sacrifice ultimately serves and culminates in) rather than a license to abandon ritual practice outright — 18:5 makes that explicit a full fourteen chapters later, closing off a literal reading of 4:33 as permission to discard sacrifice, charity, and austerity once one has 'graduated' to knowledge. The wider shift the Vedic hymns' heavy ritual emphasis gives way to the Upanishads' turn toward knowledge of Brahman is usually read the same way in Hindu tradition: an evolving emphasis across a large body of literature, not one text overruling another.",
+  },
+  {
+    id: "hinduism-renunciation-or-action",
+    religionId: "hinduism",
+    group: "Philosophy",
+    title: "Renounce Action, or Perform It?",
+    description:
+      "The Bhagavad Gita states plainly that one cannot achieve liberation merely by abstaining from action, since action of some kind is unavoidable even for a moment — yet elsewhere in the same text, Krishna discusses renunciation of action (sannyasa) as a valid path toward the same highest goal, alongside performing action without attachment to its results.",
+    passages: [
+      {
+        reference: "Bhagavad Gita 3.4",
+        text: "Not by merely abstaining from work can one achieve freedom from reaction, nor by renunciation alone can one attain perfection.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/3/verse/4",
+      },
+      {
+        reference: "Bhagavad Gita 5.2",
+        text: "The Personality of Godhead replied: The renunciation of work and work in devotion are both good for liberation. But, of the two, work in devotional service is better than renunciation of work.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/5/verse/2",
+      },
+    ],
+    note: "The Gita's own resolution, restated in several different ways across its eighteen chapters, is that true 'renunciation' means giving up attachment to the results of action rather than giving up action itself — 18:2 later distinguishes these two senses of the word explicitly, defining sannyasa as giving up desire-driven action and tyaga as giving up attachment to any action's fruit. Read this way, 3:4 and 5:2 aren't opposed: 3:4 rules out a literal cessation of activity as the path, while 5:2 still commends renunciation understood in its inner, attachment-free sense — just as a slightly harder route to the same goal reaching action-without-attachment achieves more directly.",
+  },
+  {
+    id: "hinduism-violence-or-ahimsa",
+    religionId: "hinduism",
+    group: "Philosophy",
+    title: "Is Violence Ever Justified?",
+    description:
+      "The Bhagavad Gita's entire narrative frame has Krishna urging the warrior Arjuna to fight and kill in a righteous war, as his prescribed duty — yet the same text separately lists nonviolence (ahimsa) among the essential qualities of true knowledge.",
+    passages: [
+      {
+        reference: "Bhagavad Gita 2.31",
+        text: "Considering your specific duty as a kshatriya, you should know that there is no better engagement for you than fighting on religious principles; and so there is no need for hesitation.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/2/verse/31",
+      },
+      {
+        reference: "Bhagavad Gita 13.8",
+        text: "Humility; pridelessness; nonviolence; tolerance; simplicity; approaching a bona fide spiritual master... these are declared to be knowledge, and what is contrary to these is ignorance.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/13/verse/8",
+      },
+    ],
+    note: "Classical and modern commentators generally read this as a tension between two different obligations rather than a flat contradiction: ahimsa functions as a general ethical default, while dharma tied to one's specific role — here, a warrior's duty to protect against injustice — can override it in a particular circumstance, similar to just-war reasoning in other traditions. This remains a genuinely live debate rather than a fully settled question within Hinduism: Gandhi, working from the same text, read the Gita's battlefield setting as primarily allegorical (an inner struggle against one's own base impulses) specifically because he found the literal endorsement of killing hard to reconcile with the ahimsa he saw as the text's deeper ethical teaching.",
+  },
+  {
+    id: "hinduism-liberation-duty-or-surrender",
+    religionId: "hinduism",
+    group: "Philosophy",
+    title: "Liberation Through Duty, or Through Surrender?",
+    description:
+      "For seventeen chapters, the Bhagavad Gita builds a detailed philosophy of liberation through disciplined action and duty (karma-yoga) — yet in its closing teaching, Krishna tells Arjuna to abandon all of that and simply surrender to him instead.",
+    passages: [
+      {
+        reference: "Bhagavad Gita 3.9",
+        text: "Work done as a sacrifice for Vishnu has to be performed, otherwise work causes bondage in this material world. Therefore, O son of Kunti, perform your prescribed duties for His satisfaction, and in that way you will always remain free from bondage.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/3/verse/9",
+      },
+      {
+        reference: "Bhagavad Gita 18.66",
+        text: "Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions; do not fear.",
+        translation: "A. C. Bhaktivedanta Swami Prabhupada",
+        sourceUrl: "https://www.holy-bhagavad-gita.org/chapter/18/verse/66",
+      },
+    ],
+    note: "Bhakti (devotional) commentators read 18:66 as the Gita's true final word, to which the entire preceding discussion of duty and disciplined action was building — action performed correctly (3:9's 'as a sacrifice') is itself a form of surrender, so the two teachings converge rather than conflict, with 18:66 making explicit what right action was already meant to embody. Other readers note the shift in emphasis is real enough that Hindu tradition itself treats this as a genuine, unresolved question rather than a rhetorical flourish — Gita commentaries by figures like Ramanuja and Madhva differ substantially on how much weight 18:66 should carry relative to the karma-yoga teaching that occupies most of the text, part of the larger karma-versus-grace debate found across Hindu devotional literature (compare 9:30-31, where even someone with a poor past is called righteous once they turn to Krishna).",
   },
 ];
 
