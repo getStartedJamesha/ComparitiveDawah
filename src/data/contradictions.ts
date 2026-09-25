@@ -1455,6 +1455,29 @@ export const contradictions: Contradiction[] = [
     note: "Most commentators, classical and modern, read Genesis 2:4's 'day' as an idiom for 'at the time when' rather than a literal 24-hour period contradicting the six-day account — the Hebrew word yom ('day') is used this way elsewhere in the Torah (e.g. 'in the day that thou eatest thereof,' Genesis 2:17, doesn't mean Adam would die within 24 hours). This idiomatic use is usually raised in debates about how literally to read Genesis 1's own six 'days,' rather than treated as a separate contradiction in its own right.",
   },
   {
+    id: "judaism-divine-names-creation",
+    religionId: "judaism",
+    group: "Creation",
+    title: "Two Names for God in Creation",
+    description:
+      "Genesis's first creation account refers to God consistently as Elohim; the second account, beginning at 2:4, switches to the compound name YHWH Elohim ('the LORD God') and continues using it throughout — one of several stylistic differences between the two accounts.",
+    passages: [
+      {
+        reference: "Genesis 1:1, 27",
+        text: "In the beginning God created the heaven and the earth... And God created man in His own image, in the image of God created He him; male and female created He them.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.1.1",
+      },
+      {
+        reference: "Genesis 2:4, 7",
+        text: "These are the generations of the heaven and of the earth when they were created, in the day that the LORD God made earth and heaven... Then the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.2.4",
+      },
+    ],
+    note: "Rabbinic tradition (e.g. Midrash Rabbah, and later Maimonides) reads the shift as intentional and meaningful: 'Elohim' emphasizing God's role as Judge and Creator acting through the forces of nature, and 'YHWH,' God's personal, covenantal name, introduced once the narrative turns to His direct relationship with humanity. Source-critical scholarship instead reads the consistent difference in divine names — one of several linguistic and stylistic markers — as evidence the two creation accounts derive from distinct literary sources (commonly labeled 'P' and 'J') later combined by an editor, the same division proposed for several other entries on this page.",
+  },
+  {
     id: "judaism-ark-animals",
     religionId: "judaism",
     group: "The Flood & Babel",
@@ -1522,6 +1545,98 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "A widely proposed resolution reads Genesis 10 and 11 as not strictly chronological relative to each other: Genesis 10 is read as a genealogical table describing the world's nations as they existed by a later point, narrated first for structural reasons, while Genesis 11 then flashes back to explain, thematically rather than strictly sequentially, how that linguistic diversity originally came about. This kind of achronological, topically-organized narration is read by many scholars as a recognized feature of ancient Near Eastern historiography generally, including elsewhere in Genesis.",
+  },
+  {
+    id: "judaism-abraham-knew-name",
+    religionId: "judaism",
+    group: "The Patriarchs",
+    title: "Did the Patriarchs Know God's Name?",
+    description:
+      "Genesis repeatedly has Abraham calling on God by the name YHWH generations before Moses; when God later commissions Moses, He states plainly that the patriarchs did not know Him by that name.",
+    passages: [
+      {
+        reference: "Genesis 12:8",
+        text: "And he removed from thence unto the mountain on the east of Beth-el, and pitched his tent... and he builded there an altar unto the LORD, and called upon the name of the LORD.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.12.8",
+      },
+      {
+        reference: "Exodus 6:2-3",
+        text: "And God spoke unto Moses, and said unto him: 'I am the LORD; and I appeared unto Abraham, unto Isaac, and unto Jacob, as God Almighty, but by My name YHWH I made Me not known to them.'",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Exodus.6.2-3",
+      },
+    ],
+    note: "Classical commentators (e.g. Rashi, following the Midrash) read 'made Me not known' as referring to experiencing God's attribute of faithfully fulfilling His promises — bound up in the name YHWH — rather than literal ignorance of a word: the patriarchs knew and used the name, but did not live to see the covenant promises attached to it (the land, descendants) actually fulfilled the way Moses's generation was about to. This reading turns on 'knowing a name' meaning something closer to 'experiencing what it stands for' than simple verbal awareness, a sense the word carries elsewhere in the Torah too.",
+  },
+  {
+    id: "judaism-moses-wrote-death",
+    religionId: "judaism",
+    group: "Moses & the Exodus",
+    title: "Did Moses Write the Account of His Own Death?",
+    description:
+      "Jewish tradition holds Moses wrote the entire Torah, yet the Torah's final chapter narrates his death, burial in an unknown location, and the fact that no prophet like him arose again — details a living author could not straightforwardly record about himself.",
+    passages: [
+      {
+        reference: "Deuteronomy 34:5-6",
+        text: "So Moses the servant of the LORD died there in the land of Moab... and he was buried in the valley in the land of Moab over against Beth-peor; and no man knoweth of his sepulchre unto this day.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Deuteronomy.34.5-6",
+      },
+      {
+        reference: "Deuteronomy 34:10",
+        text: "And there hath not arisen a prophet since in Israel like unto Moses, whom the LORD knew face to face.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Deuteronomy.34.10",
+      },
+    ],
+    note: "The question is old enough to be debated directly in the Talmud itself (Bava Batra 14b-15a): one view holds Joshua wrote the final eight verses after Moses's death, while another holds Moses wrote them himself beforehand, in tears, by prophetic dictation. Both views agree the verses are part of the Torah's authoritative text; they differ only on the mechanism by which Moses's own death came to be recorded — a question the Torah's traditional authorship raises for itself, rather than one raised only by outside critics.",
+  },
+  {
+    id: "judaism-pharaoh-heart-hardened",
+    religionId: "judaism",
+    group: "Moses & the Exodus",
+    title: "Who Hardened Pharaoh's Heart?",
+    description:
+      "Through the early plagues, Exodus repeatedly says Pharaoh hardened his own heart; from the sixth plague onward, it just as repeatedly says God hardened Pharaoh's heart.",
+    passages: [
+      {
+        reference: "Exodus 8:15",
+        text: "But when Pharaoh saw that there was respite, he hardened his heart, and hearkened not unto them; as the LORD had spoken.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Exodus.8.15",
+      },
+      {
+        reference: "Exodus 9:12",
+        text: "And the LORD hardened the heart of Pharaoh, and he hearkened not unto them; as the LORD had spoken unto Moses.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Exodus.9.12",
+      },
+    ],
+    note: "This isn't necessarily a strict contradiction — both can be true in sequence, and many commentators (e.g. the medieval philosopher-exegetes) read it exactly that way: Pharaoh freely hardens his own heart across the first five plagues, and God subsequently 'confirms' or judicially hardens it from the sixth plague onward as a consequence of Pharaoh's own repeated choice, rather than overriding his will from the start. It remains one of the Torah's sharpest texts for the broader theological question of how human free will and divine determination relate, a question Jewish philosophy has long debated rather than considered settled by this reading alone.",
+  },
+  {
+    id: "judaism-sabbath-two-reasons",
+    religionId: "judaism",
+    group: "Moses & the Exodus",
+    title: "Two Reasons for the Sabbath",
+    description:
+      "The Ten Commandments appear twice in the Torah, in Exodus and Deuteronomy, with the Sabbath commandment worded differently each time — 'remember' versus 'observe' — and, more strikingly, grounded in two different reasons: creation in Exodus, the Exodus from Egypt in Deuteronomy.",
+    passages: [
+      {
+        reference: "Exodus 20:8, 11",
+        text: "Remember the sabbath day, to keep it holy... for in six days the LORD made heaven and earth, the sea, and all that in them is, and rested on the seventh day; wherefore the LORD blessed the sabbath day, and hallowed it.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Exodus.20.8",
+      },
+      {
+        reference: "Deuteronomy 5:12, 15",
+        text: "Observe the sabbath day, to keep it holy... And thou shalt remember that thou wast a servant in the land of Egypt, and the LORD thy God brought thee out thence... therefore the LORD thy God commanded thee to keep the sabbath day.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Deuteronomy.5.12",
+      },
+    ],
+    note: "Rabbinic tradition (famously, the Talmudic teaching that 'remember' and 'observe' were spoken by God in a single, miraculous utterance, Rosh Hashanah 27a) treats the two versions as complementary restatements rather than competing accounts — one grounding the Sabbath in creation generally, the other in Israel's own liberation specifically, both read as valid reasons for the same commandment rather than rival explanations. Source-critical scholarship instead points to the wording and rationale differences, here and elsewhere between Exodus's and Deuteronomy's law codes, as evidence of separate literary strata within the Torah.",
   },
   {
     id: "judaism-census-instigator",
@@ -1685,6 +1800,29 @@ export const contradictions: Contradiction[] = [
     note: "Fits the same broader pattern as the horse-stalls and census-count discrepancies elsewhere on this page — widely attributed to scribal numeral transmission errors between the two books, which drew on shared or related source material centuries apart. The horsemen/footmen difference is less commonly discussed than the tenfold numeral pattern, but is read the same way by most textual critics.",
   },
   {
+    id: "judaism-zobah-horsemen",
+    religionId: "judaism",
+    group: "Kings & Chronicles",
+    title: "How Many Horsemen Did David Capture at Zobah?",
+    description:
+      "In a separate battle from the Aramean coalition fight recorded elsewhere on this page, Samuel records David capturing 1,700 horsemen from Hadadezer of Zobah; Chronicles, describing the same battle, records 1,000 chariots and 7,000 horsemen — both books agree on the 20,000 footmen.",
+    passages: [
+      {
+        reference: "II Samuel 8:4",
+        text: "And David took from him a thousand and seven hundred horsemen, and twenty thousand footmen; and David hocked all the chariot horses, but reserved of them for a hundred chariots.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/II_Samuel.8.4",
+      },
+      {
+        reference: "I Chronicles 18:4",
+        text: "And David took from him a thousand chariots, and seven thousand horsemen, and twenty thousand footmen; and David hocked all the chariot horses, but reserved of them for a hundred chariots.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Chronicles.18.4",
+      },
+    ],
+    note: "This is a well-known textual crux rather than a simple round-number mismatch: Samuel's 'a thousand and seven hundred horsemen' and Chronicles's 'a thousand chariots, and seven thousand horsemen' look like they may derive from the same underlying Hebrew consonants, divided differently by scribes copying the numeral notation — some ancient versions of Samuel itself (portions of the Septuagint) already read closer to Chronicles's figures. Both books otherwise agree word-for-word on the surrounding verse (the footmen count and the hocking of chariot horses), which is part of why textual critics read this as a transmission variant of one original number rather than two independently reported totals.",
+  },
+  {
     id: "judaism-ahaziah-age",
     religionId: "judaism",
     group: "Kings & Chronicles",
@@ -1752,6 +1890,75 @@ export const contradictions: Contradiction[] = [
       },
     ],
     note: "Most modern text-critical scholars regard 1 Chronicles 20:5 (which credits Elhanan with killing 'Lahmi the brother of Goliath') as a later scribal harmonization of an original discrepancy: 'Lahmi' appears to be formed from re-dividing consonants that, in the Samuel text, spell out 'the Bethlehemite' — a plausible scribal fix rather than independent information. Other traditional harmonists instead propose 'Elhanan' was another name for David, or that two different Philistine warriors both carried the name or title 'Goliath.'",
+  },
+  {
+    id: "judaism-saul-sons",
+    religionId: "judaism",
+    group: "Historical Narratives",
+    title: "Three Sons of Saul, or Five?",
+    description:
+      "One list of Saul's family names three sons; a later genealogical list, covering the same family, names five — including two, Abinadab and Esh-baal, absent from the first list entirely.",
+    passages: [
+      {
+        reference: "I Samuel 14:49",
+        text: "Now the sons of Saul were Jonathan, and Ishvi, and Malchi-shua; and the names of his two daughters were these: the name of the first-born Merab, and the name of the younger Michal.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Samuel.14.49",
+      },
+      {
+        reference: "I Chronicles 8:33",
+        text: "And Ner begot Kish, and Kish begot Saul, and Saul begot Jonathan, and Malchi-shua, and Abinadab, and Eshbaal.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Chronicles.8.33",
+      },
+    ],
+    note: "Part of the gap is plausibly explained by scope rather than disagreement: 1 Samuel 14:49 reads like a selective introduction of Saul's household at that point in the narrative, not a claim to list every child, and Chronicles's genealogies elsewhere in the same book routinely include sons omitted from earlier narrative summaries. The remaining puzzle is 'Ishvi': many commentators identify him with Chronicles's 'Eshbaal' (later called Ish-bosheth in 2 Samuel), reading the differing names as the same son recorded under more than one name or title across different books — a common pattern in these genealogies, but one that requires accepting a name change the text itself never states directly.",
+  },
+  {
+    id: "judaism-saul-death",
+    religionId: "judaism",
+    group: "Historical Narratives",
+    title: "How Did Saul Die?",
+    description:
+      "Samuel's narrative account has Saul take his own life by falling on his sword after being critically wounded in battle; in the very next chapter, an Amalekite man tells David a different story — that Saul, still alive after the battle, asked to be killed and the Amalekite obliged him.",
+    passages: [
+      {
+        reference: "I Samuel 31:3-4",
+        text: "And the battle went sore against Saul... Then said Saul to his armour-bearer: 'Draw thy sword, and thrust me through therewith... Therefore Saul took his own sword, and fell upon it.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Samuel.31.3-4",
+      },
+      {
+        reference: "II Samuel 1:9-10",
+        text: "And he said unto me: 'Stand, I pray thee, beside me, and slay me, for the agony hath taken hold of me; because my life is just yet in me.' So I stood beside him, and slew him...",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/II_Samuel.1.9-10",
+      },
+    ],
+    note: "The traditional and still most common Jewish reading treats these as two different accounts, not two true ones: the narrator's own version in 1 Samuel 31 is taken as the reliable account of what actually happened, while the Amalekite's version in 2 Samuel 1 is read as a fabrication — a stranger inventing a story he thought would earn him a reward from David for killing David's rival, not realizing it would instead cost him his life (David has him executed a few verses later, 2 Samuel 1:15, for claiming to have killed 'the LORD's anointed'). Read this way, the two chapters aren't in tension about the facts of Saul's death; one is simply reporting a character's lie.",
+  },
+  {
+    id: "judaism-ark-transport",
+    religionId: "judaism",
+    group: "Historical Narratives",
+    title: "How Was the Ark Supposed to Be Carried?",
+    description:
+      "Torah law assigns carrying the Ark exclusively to the Kohathite Levites, on foot, using poles through its rings; when David first moves the Ark to Jerusalem, it's placed on an ox-drawn cart instead — a departure from the law David himself points to years later when the Ark is finally moved the proper way.",
+    passages: [
+      {
+        reference: "Numbers 4:15",
+        text: "...the sons of Kohath shall come to bear it; but they shall not touch the holy things, lest they die. These things are the burden of the sons of Kohath in the tent of meeting.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Numbers.4.15",
+      },
+      {
+        reference: "II Samuel 6:3, 6-7",
+        text: "And they set the ark of God upon a new cart... And when they came to the threshing-floor of Nacon, Uzzah put forth his hand to the ark of God, and took hold of it... and God smote him there for his error; and there he died by the ark of God.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/II_Samuel.6.3",
+      },
+    ],
+    note: "The text itself treats this as a real mistake rather than a harmless variant: Uzzah's death is presented as the direct consequence of the Ark being transported the wrong way, and 1 Chronicles 15:2, 13 has David explicitly saying afterward that 'none ought to carry the ark of God but the Levites' and that Uzzah died 'because we sought Him not after the due order.' Rather than a contradiction between two competing rules, this is one of the clearer biblical cases of a described practice deviating from prescribed law, with the narrative itself naming the deviation as the cause of what went wrong.",
   },
   {
     id: "judaism-does-god-change",
@@ -1924,13 +2131,42 @@ export const contradictions: Contradiction[] = [
         sourceUrl: "https://www.sefaria.org/Leviticus.1.3",
       },
       {
+        reference: "I Samuel 15:22",
+        text: "Hath the LORD as great delight in burnt-offerings and sacrifices, as in hearkening to the voice of the LORD? Behold, to obey is better than sacrifice, and to hearken than the fat of rams.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/I_Samuel.15.22",
+      },
+      {
         reference: "Psalm 40:7; Hosea 6:6",
         text: "Sacrifice and meal-offering Thou hast no delight in; mine ears hast Thou opened; burnt-offering and sin-offering hast Thou not required... For I desire mercy, and not sacrifice; and the knowledge of God rather than burnt-offerings.",
         translation: "JPS 1917",
         sourceUrl: "https://www.sefaria.org/Psalms.40.7",
       },
     ],
-    note: "Widely read, including in classical Jewish commentary, as rhetorical emphasis rather than literal cancellation: the Psalms and Prophets frequently use this kind of hyperbolic 'not X but Y' construction (compare Hosea 6:6's own parallel clause) to stress that sacrifice without genuine obedience, mercy, or right relationship with God is worthless — not that the sacrificial system itself is void. The broader context of both Psalm 40 and Hosea 6 includes calls to covenant faithfulness generally, of which sacrifice was meant to be one expression, not a replacement for it.",
+    note: "Widely read, including in classical Jewish commentary, as rhetorical emphasis rather than literal cancellation: the Prophets and historical books frequently use this kind of hyperbolic 'not X but Y' construction (compare Hosea 6:6's own parallel clause) to stress that sacrifice without genuine obedience, mercy, or right relationship with God is worthless — not that the sacrificial system itself is void. Samuel's rebuke of Saul in particular is about disobeying a specific command, not a blanket statement that God never wants sacrifice; the broader context of both passages includes calls to covenant faithfulness generally, of which sacrifice was meant to be one expression, not a replacement for it.",
+  },
+  {
+    id: "judaism-covenant-everlasting-or-new",
+    religionId: "judaism",
+    group: "God's Nature",
+    title: "An Everlasting Covenant, or a New One?",
+    description:
+      "God describes the covenant of circumcision with Abraham's descendants as an everlasting covenant; centuries later, Jeremiah has God announcing a coming 'new covenant' with Israel, distinct from the one made at the Exodus.",
+    passages: [
+      {
+        reference: "Genesis 17:13",
+        text: "...and My covenant shall be in your flesh for an everlasting covenant.",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Genesis.17.13",
+      },
+      {
+        reference: "Jeremiah 31:30-32",
+        text: "Behold, the days come, saith the LORD, that I will make a new covenant with the house of Israel, and with the house of Judah; not according to the covenant that I made with their fathers in the day that I took them by the hand to bring them out of the land of Egypt...",
+        translation: "JPS 1917",
+        sourceUrl: "https://www.sefaria.org/Jeremiah.31.30",
+      },
+    ],
+    note: "Jewish tradition generally reads Jeremiah's 'new covenant' as a renewal and internalization of the same everlasting relationship — the passage goes on to describe God's law written 'in their hearts' rather than a replacement people or a different set of obligations — not the everlasting Abrahamic covenant of circumcision being annulled or superseded, which is how the same passage has often been read in Christian tradition (see the Christianity section of this page). Read this way, 'new' describes a deeper, more internalized mode of the same covenant relationship rather than a second, different covenant contradicting the first one's permanence.",
   },
 
   // --------------------------------------------------------------- HINDUISM
