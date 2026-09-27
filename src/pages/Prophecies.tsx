@@ -15,7 +15,7 @@ export default function Prophecies() {
         A recurring theme in Dawah is the claim that earlier scriptures
         foretold the coming of Muhammad ﷺ. Each entry below states that
         claim honestly, gives an authentic citation where one exists, and
-        also gives the tradition's own mainstream reading of the same
+        also gives that faith's own mainstream reading of the same
         passage — including, in one case, a direct fact about manuscript
         evidence that bears on the claim.
       </p>

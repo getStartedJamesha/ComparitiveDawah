@@ -18,11 +18,11 @@ export default function Contradictions() {
       </h1>
       <p className="mt-3 max-w-3xl text-slate-600 dark:text-slate-300">
         Comparative theology also has to look honestly at places where a
-        tradition's own scripture appears to say two different things.
+        faith's own scripture appears to say two different things.
         Below are well-documented tensions within Christianity, Judaism, and
         Hinduism — each with the exact passages side by side, the specific
         translation used, a link to verify it at a primary source, and a
-        brief note on how the tradition itself has addressed it.
+        brief note on how that faith itself has addressed it.
       </p>
       <p className="mt-3 max-w-3xl text-sm text-slate-500 dark:text-slate-400">
         This page intentionally does not cover Islam or the Qur'an. Nothing
@@ -65,7 +65,7 @@ export default function Contradictions() {
                   to={`/religions/${religion.id}`}
                   className="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-600"
                 >
-                  see this tradition's affirmative verses
+                  see this faith's affirmative verses
                 </Link>
               </p>
             </div>

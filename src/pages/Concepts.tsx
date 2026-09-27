@@ -30,7 +30,7 @@ export default function Concepts() {
               {concept.summary}
             </p>
             <span className="mt-4 inline-block text-sm font-medium text-teal-700 dark:text-teal-400">
-              Compare all four traditions →
+              Compare all four faiths →
             </span>
           </Link>
         ))}

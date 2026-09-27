@@ -4,10 +4,10 @@ import { religions } from "../data/religions";
 export default function Religions() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-      <h1 className="font-serif text-3xl font-semibold">The traditions</h1>
+      <h1 className="font-serif text-3xl font-semibold">The faith traditions</h1>
       <p className="mt-2 max-w-2xl text-slate-600 dark:text-slate-300">
-        A brief overview of each tradition, and every verse referenced on
-        this site for that tradition, grouped by theological concept.
+        A brief overview of each faith, and every verse referenced on
+        this site for that faith, grouped by theological concept.
       </p>
 
       <div className="mt-8 grid gap-5 sm:grid-cols-2">

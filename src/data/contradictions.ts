@@ -3,7 +3,7 @@ import type { Contradiction, ContradictionReligionId } from "./types";
 /**
  * Same sourcing policy as verses.ts: only well-attested, commonly discussed
  * passages, each naming its translation and linking to a primary source.
- * A `note` on each entry names how the tradition itself has responded
+ * A `note` on each entry names how that faith itself has responded
  * (harmonization, source-critical theory, competing philosophical school) —
  * the goal is an honest account of a real textual tension, not a "gotcha."
  */

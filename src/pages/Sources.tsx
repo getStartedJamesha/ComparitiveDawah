@@ -51,8 +51,8 @@ export default function Sources() {
           </h2>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
             Every verse quoted here is a commonly cited, non-fringe passage
-            within its own tradition — not an obscure or disputed reading
-            selected to score a rhetorical point.
+            within its own faith tradition — not an obscure or disputed
+            reading selected to score a rhetorical point.
           </p>
         </section>
 
@@ -107,10 +107,11 @@ export default function Sources() {
             4. Differences are named, not smoothed over
           </h2>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            Where traditions genuinely diverge — for example, the Trinity in
-            Christian theology, or reincarnation versus bodily resurrection
-            — a note on the verse card says so plainly. The goal is honest
-            comparison, not forcing every tradition to say the same thing.
+            Where faith traditions genuinely diverge — for example, the
+            Trinity in Christian theology, or reincarnation versus bodily
+            resurrection — a note on the verse card says so plainly. The goal
+            is honest comparison, not forcing every faith to say the same
+            thing.
           </p>
         </section>
 

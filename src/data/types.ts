@@ -75,7 +75,7 @@ export interface ScienceTopic {
   context: string;
 }
 
-/** Scriptures with a claimed prophecy of Muhammad — presented alongside each tradition's own mainstream reading. */
+/** Scriptures with a claimed prophecy of Muhammad — presented alongside each faith's own mainstream reading. */
 export type ProphecyReligionId = "judaism" | "christianity" | "hinduism";
 
 export interface Prophecy {

@@ -43,7 +43,7 @@ export default function Home() {
               Theological concepts
             </h2>
             <p className="mt-1 text-slate-500 dark:text-slate-400">
-              Pick a question and see how each tradition's own scripture
+              Pick a question and see how each faith's own scripture
               answers it.
             </p>
           </div>
@@ -79,10 +79,10 @@ export default function Home() {
       <section className="border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/40">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <h2 className="font-serif text-2xl font-semibold">
-            The four traditions
+            The four faiths
           </h2>
           <p className="mt-1 text-slate-500 dark:text-slate-400">
-            Each tradition's overview page collects every verse referenced
+            Each faith's overview page collects every verse referenced
             on this site, grouped by concept.
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -114,7 +114,7 @@ export default function Home() {
             Internal tensions &amp; contradictions
           </h2>
           <p className="mt-2 max-w-2xl text-slate-600 dark:text-slate-300">
-            A fair comparison also looks at places where a tradition's own
+            A fair comparison also looks at places where a faith's own
             scripture appears to say two different things. This section
             covers Christianity, Judaism, and Hinduism, with every passage
             cited and linked to a primary source.
@@ -153,8 +153,8 @@ export default function Home() {
             </h2>
             <p className="mt-2 text-slate-600 dark:text-slate-300">
               Passages from the Tanakh, the New Testament, and Hindu
-              scripture said to foretell his coming — each with the
-              tradition's own mainstream reading alongside the claim.
+              scripture said to foretell his coming — each with that
+              faith's own mainstream reading alongside the claim.
             </p>
             <Link
               to="/prophecies"
