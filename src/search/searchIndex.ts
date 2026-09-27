@@ -11,7 +11,7 @@ import {
 
 export type SearchResultType =
   | "Concept"
-  | "Tradition"
+  | "Faith"
   | "Verse"
   | "Contradiction"
   | "Science"
@@ -52,7 +52,7 @@ function buildIndex(): SearchItem[] {
   for (const religion of religions) {
     items.push({
       id: `religion-${religion.id}`,
-      type: "Tradition",
+      type: "Faith",
       title: religion.name,
       subtitle: religion.scripture,
       url: `/religions/${religion.id}`,

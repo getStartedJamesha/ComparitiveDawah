@@ -6,14 +6,14 @@ export const concepts: Concept[] = [
     title: "The Oneness of God",
     question: "Is God one, indivisible, and without equal?",
     summary:
-      "The starting point of Dawah: every major scripture tradition preserves a call to the singular, ultimate reality behind creation — though they differ sharply on whether that One admits any internal distinction (e.g. the Trinity).",
+      "The starting point of Dawah: every major faith tradition preserves a call to the singular, ultimate reality behind creation — though they differ sharply on whether that One admits any internal distinction (e.g. the Trinity).",
   },
   {
     id: "creation",
     title: "God as Creator",
     question: "Who brought the heavens and the earth into being?",
     summary:
-      "All four traditions teach that a single supreme source originated the universe, rather than it existing eternally on its own or being the product of many competing gods.",
+      "All four faiths teach that a single supreme source originated the universe, rather than it existing eternally on its own or being the product of many competing gods.",
   },
   {
     id: "no-partners",
@@ -34,14 +34,14 @@ export const concepts: Concept[] = [
     title: "Prophets & Messengers",
     question: "Does God guide humanity through chosen messengers?",
     summary:
-      "Each tradition describes God raising up chosen individuals to deliver His message and call people back to righteousness.",
+      "Each faith describes God raising up chosen individuals to deliver His message and call people back to righteousness.",
   },
   {
     id: "afterlife",
     title: "Life After Death",
     question: "What happens to the soul after death?",
     summary:
-      "Every tradition affirms that death is not the end and that a person's deeds have consequences beyond this life — though the specifics (resurrection vs. reincarnation) differ substantially.",
+      "Every faith affirms that death is not the end and that a person's deeds have consequences beyond this life — though the specifics (resurrection vs. reincarnation) differ substantially.",
   },
   {
     id: "omniscience",

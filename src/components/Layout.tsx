@@ -4,7 +4,7 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/concepts", label: "Concepts" },
-  { to: "/religions", label: "Traditions" },
+  { to: "/religions", label: "Faiths" },
   { to: "/contradictions", label: "Contradictions" },
   { to: "/science", label: "Science" },
   { to: "/prophecies", label: "Foretold" },
@@ -105,7 +105,7 @@ export default function Layout() {
           </p>
           <p className="mt-3">
             Built in a spirit of respectful, good-faith comparison across
-            traditions.
+            faith traditions.
           </p>
         </div>
       </footer>

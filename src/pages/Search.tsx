@@ -4,7 +4,7 @@ import { search } from "../search/searchIndex";
 
 const TYPE_STYLES: Record<string, string> = {
   Concept: "bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-400",
-  Tradition: "bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
+  Faith: "bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
   Verse: "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-400",
   Contradiction: "bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
   Science: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-400",

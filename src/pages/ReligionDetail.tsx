@@ -17,7 +17,7 @@ export default function ReligionDetail() {
         to="/religions"
         className="text-sm font-medium text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
       >
-        ← All traditions
+        ← All faiths
       </Link>
 
       <div
